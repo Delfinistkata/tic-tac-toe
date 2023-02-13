@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 400;
+    color: #000000;
+    background-color: whitesmoke;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Heading*/
+
+.main-heading {
+    font-weight: 400;
+    color: #000000;
+    font-family: 'Tajawal', sans-serif;
+    text-align: center;
+    margin: 10%;
+}
+
+/*Buttons-First Page*/
+
+.main-button {
+    margin: 3%;
+    padding: 20px;
+    font-size: 1em;
+    cursor: pointer;
+    display:inline-block;
+    background-color: red;
+    box-shadow: 2px 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+footer {
+    width: 100%;
+    display: inline-block;
+    height: 70px;
+    background-color: #999;
+    margin-top: auto;
+}
+
+
+.copyright p {
+    background-color: rgb(191, 191, 191);
+    font-size: 0.6em;
+    line-height: 70px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
