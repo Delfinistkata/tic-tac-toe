@@ -9,7 +9,6 @@
 
 body {
     font-family: 'Tajawal', sans-serif;
-    font-weight: 400;
     color: #000000;
     background-color: whitesmoke;
     min-height: 100vh;
@@ -20,30 +19,85 @@ body {
 /*Heading*/
 
 .main-heading {
-    font-weight: 400;
+    font-weight: 500;
     color: #000000;
     font-family: 'Tajawal', sans-serif;
     text-align: center;
     margin: 10%;
 }
 
-/*Buttons-First Page*/
+.main-heading p {
+    font-size: 3rem;
+    text-shadow: 3px 3px 3px red;
+}
+
+/* Home Page styling */
+/*Buttons- Home Page*/
 
 .main-button {
     margin: 3%;
     padding: 20px;
     font-size: 1em;
     cursor: pointer;
-    display:inline-block;
+    display: inline-block;
     background-color: red;
     box-shadow: 2px 2px;
 }
 
+.main-button p {
+    font-size: 1em;
+    text-shadow: 3px 3px 3px #000000;
+    font-weight: 100;
+}
 
 
+/*Image on home page */
 
+img {
+    margin: 5%;
+}
 
+/*Styling Rules Page */
+/* Styling Rules heading */
 
+.instructions {
+    font-weight: 500;
+    color: #000000;
+    font-family: 'Tajawal', sans-serif;
+    text-align: center;
+    margin: 5%;
+}
+
+.instructions p {
+    font-size: 1em;
+    text-shadow: 3px 3px 3px #000000;
+    font-weight: 100;
+}
+
+/* Code from https://www.w3schools.com/css/css3_flexbox_responsive.asp */
+/* Styling Instructions */
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    text-align: center;
+    background-color: red;
+    color: ghostwhite;
+    margin: 2%;
+}
+
+.flex-item-left {
+
+    padding: 10px;
+    flex: 50%;
+}
+
+.flex-item-right {
+
+    padding: 10px;
+    flex: 50%;
+}
 
 
 
@@ -55,16 +109,16 @@ footer {
     width: 100%;
     display: inline-block;
     height: 70px;
-    background-color: #999;
     margin-top: auto;
 }
 
 
 .copyright p {
-    background-color: rgb(191, 191, 191);
-    font-size: 0.6em;
+    background-color: rgb(102 102 102);
+    font-size: 0.8em;
     line-height: 70px;
     text-transform: capitalize;
     letter-spacing: 1px;
+    color: ghostwhite;
+    text-align: center;
 }
-
