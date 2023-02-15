@@ -121,7 +121,6 @@ img {
 /* Styling pop up mesage for choosing player */
 
 .pop-up {
-
     display: flex;
     position: absolute;
     top: 40%;
