@@ -66,6 +66,10 @@ body {
     color: whitesmoke;
 }
 
+.reset:hover {
+    color: whitesmoke;
+}
+
 /*Image on home page */
 
 img {
@@ -114,37 +118,87 @@ img {
     flex: 50%;
 }
 
-/* Code from:https://codepen.io/groundtutorial/pen/gOjKeOJ */
+/* Styling pop up mesage for choosing player */
+
+.pop-up {
+
+    display: flex;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 5%);
+    border: 3px solid #000000;
+    z-index: 9;
+}
+
+.choose-player {
+    background: red;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.choose-player-button {
+    width: 20%;
+}
+
+
+/* Code from:https://www.tutorialstonight.com/tic-tac-toe-javascript */
 /* Styling game board */
 
-.container {
-    min-height: 100vh;
+.board {
+    display: contents;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-right: 2px solid black;
+}
+
+.board-row {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
-    background-color: rgb(238, 233, 233);
+    align-items: center;
 }
 
-.play-area {
-    background-color: red;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    box-shadow: 0 0 15px blue;
-    padding: 20px;
-}
-
-.block {
-    display: flex;
-    height: 100px;
+.board-cell {
     width: 100px;
-    align-items: center;
+    height: 100px;
+    border: 1px solid black;
+    cursor: pointer;
+    display: flex;
     justify-content: center;
-    font-size: 3rem;
+    align-items: center;
+    font-size: 2.5rem;
     font-weight: bold;
-    border: 3px solid black;
 }
 
+
+
+
+
+
+
+
+
+
+/* Styling score area */
+.score {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.score p {
+    
+    font-size: 1em;
+    display: inline-block;
+    background-color: black;
+    color: whitesmoke;
+}
 
 
 /* footer */

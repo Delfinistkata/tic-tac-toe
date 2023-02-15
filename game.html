@@ -19,16 +19,59 @@
     </h1>
 
 
-<!--Code from:https://codepen.io/groundtutorial/pen/gOjKeOJ-->
+    <!--Pop up message-->
 
-    <div class="container">
-        <div class="play-area">
+    <div id="pop-up">
+        <div class="choose-player">
+            <p>Choose Player:</p>
 
+            <button class="choose-player-button" onclick="closePopup()"> X </button>
+            <button class="choose-player-button" onclick="closePopup()"> O </button>
         </div>
+
+    </div>
+
+    <!--Code from:https://www.tutorialstonight.com/tic-tac-toe-javascript-->
+
+    <div class="board">
+        <div class="board-row">
+            <div class="board-cell"></div>
+            <div class="board-cell"></div>
+            <div class="board-cell"></div>
+        </div>
+
+        <div class="board-row">
+            <div class="board-cell"></div>
+            <div class="board-cell"></div>
+            <div class="board-cell"></div>
+        </div>
+
+        <div class="board-row">
+            <div class="board-cell"></div>
+            <div class="board-cell"></div>
+            <div class="board-cell"></div>
+        </div>
+
     </div>
 
 
-    <button class= "main-button reset" onclick="reset_board()">
+
+    <!--Score area-->
+    <div class="score">
+        <p>Score:</p>
+
+        <div class="player">
+            <p>Player: X</p>
+        </div>
+
+        <div class="computer">
+            <p>Computer: O</p>
+        </div>
+    </div>
+
+    <!--Buttons-->
+
+    <button class="main-button reset" onclick="reset_board()">
         <p>Reset</p>
     </button>
 

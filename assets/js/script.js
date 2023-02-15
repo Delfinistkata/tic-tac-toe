@@ -1,7 +1,13 @@
-//Code from: https://codepen.io/groundtutorial/pen/gOjKeOJ //
+//Pop up message when you click on New game //
 
-const player = "X";
-const computer = "O";
+function openPopup() {
+    document.getElementById("pop-up").style.display = "block";
+}
 
-let board_full = false;
-let play_board = ["", "", "", "", "", "", "", "", ""];
+window.onload = function () {
+    openPopup();
+}
+
+function closePopup() {
+    document.getElementById("pop-up").style.display = "none";
+}
