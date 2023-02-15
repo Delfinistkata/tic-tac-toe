@@ -14,6 +14,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 /*Heading*/
@@ -50,6 +51,20 @@ body {
     font-weight: 100;
 }
 
+
+/* Hover effect on all buttons */
+
+.rules:hover {
+    color: whitesmoke
+}
+
+.new-game:hover {
+    color: whitesmoke;
+}
+
+.home:hover {
+    color: whitesmoke;
+}
 
 /*Image on home page */
 
@@ -99,8 +114,36 @@ img {
     flex: 50%;
 }
 
+/* Code from: https://www.youtube.com/watch?v=Rzhcb4M9-0Q&list=PLw5h0DiJ-9PBJPzcRh5VcRoYkqml6b66j&index=4 */
+/* Styling game board */
 
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(238, 233, 233);
+}
 
+.play-area {
+    background-color: red;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    box-shadow: 0 0 15px blue;
+    padding: 20px;
+}
+
+.block {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    border: 3px solid black;
+}
 
 
 
