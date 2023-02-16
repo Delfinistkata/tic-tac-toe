@@ -198,13 +198,10 @@ img {
     font-weight: bold;
 }
 
-
-
-
-
-
-
-
+/* Styling results area */
+.result {
+    
+}
 
 
 /* Styling score area */
@@ -219,7 +216,7 @@ img {
 }
 
 .score p {
-    
+
     font-size: 1em;
     display: inline-block;
     background-color: black;
