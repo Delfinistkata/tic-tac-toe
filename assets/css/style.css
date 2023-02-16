@@ -120,7 +120,7 @@ img {
 
 /* Styling pop up mesage for choosing player */
 
-.pop-up {
+#pop-up {
     display: flex;
     position: absolute;
     top: 40%;
@@ -134,12 +134,39 @@ img {
     background: red;
     color: whitesmoke;
     text-align: center;
+    font-weight: bold;
 }
 
 .choose-player-button {
     width: 20%;
+    font-weight: bold;
 }
 
+/* Styling Player's Mode */
+
+.players-mode {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#player1 {
+    display: inline-block;
+    background-color: black;
+    color: whitesmoke;
+    font-size: larger;
+}
+
+#player2 {
+    display: inline-block;
+    background-color: black;
+    color: whitesmoke;
+    font-size: larger;
+}
 
 /* Code from:https://www.tutorialstonight.com/tic-tac-toe-javascript */
 /* Styling game board */
