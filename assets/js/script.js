@@ -6,8 +6,12 @@ const player1 = document.getElementById('player1');
 const player2 = document.getElementById('player2');
 const boardCell = document.querySelectorAll('.board-cell');
 const turn = document.querySelector('.turn');
+const scorecount1 = document.getElementById('scorecount1');
+const scorecount2 = document.getElementById('scorecount2');
 const result = document.querySelector('.result');
 
+var count1 = 0
+var count2 = 0
 var Player1 = "";
 var Player2 = "";
 var board = [
@@ -17,7 +21,7 @@ var board = [
 ];
 
 
-//Pop up message when you click on New game //
+//Pop up message //
 
 function openPopup() {
     document.getElementById("pop-up").style.display = "block";
@@ -40,12 +44,15 @@ function closePopup(options) {
         player1.innerHTML = 'Player 1: O';
         player2.innerHTML = 'Player 2: X';
     }
+
+    startGame()
+
     document.getElementById("pop-up").style.display = "none";
 }
 
 // Start the game //
 
-function beginGame() {
+function startGame() {
     boardCell.forEach((cell, index) => {
         cell.innerHTML = "";
         cell.addEventListener("click", handleClick.bind(null, cell, index));
@@ -58,13 +65,13 @@ function handleClick(cell, index) {
     const cellValue = cell.innerHTML;
     if (cellValue === '') {
         if (turn.innerHTML === 'Player 1') {
-            cell.innerHTML = player1;
+            cell.innerHTML = Player1;
             turn.innerHTML = 'Player 2';
-            board[Math.floor(index / 3)][index % 3] = player1;
+            board[Math.floor(index / 3)][index % 3] = Player1;
         } else {
-            cell.innerHTML = player2;
+            cell.innerHTML = Player2;
             turn.innerHTML = 'Player 1';
-            board[Math.floor(index / 3)][index % 3] = player2;
+            board[Math.floor(index / 3)][index % 3] = Player2;
         }
     }
     cell.removeEventListener('click', handleClick);
@@ -97,41 +104,61 @@ function checkWinner() {
         showResult(board[0][2]);
         return;
     }
-}
 
-// Check for Draw //
+    // Check for draw //
 
-var count = 0;
-for (let i = 0; i < 3; i++) {
+    var count = 0;
     for (let i = 0; i < 3; i++) {
-        for (let j = 0; j < 3; j++) {
-            if (board[i][j] != '') {
-                count++;
+        for (let i = 0; i < 3; i++) {
+            for (let j = 0; j < 3; j++) {
+                if (board[i][j] != '') {
+                    count++;
+                }
             }
         }
+        if (count == 9) {
+            showResult('Draw')
+            return;
+        }
     }
-    if (count == 9) {
-        showResult('Draw');
-        return;
-    }
+
 }
 
-// Show the Result of the game //
+// Show the Results //
 
 function showResult(symbol) {
     if (symbol === Player1) {
         result.innerHTML = 'Player 1 Win!';
-        } else if (symbol === Player2) {
-            result.innerHTML = 'Player 2 Win!';
-        } else {
-            result.innerHTML = 'Draw!';
-        }
-        result.style.display = 'flex';
+        countScore('Player1');
+    } else if (symbol === Player2) {
+        result.innerHTML = 'Player 2 Win!';
+        countScore('Player2');
+    } else {
+        result.innerHTML = 'Draw!';
     }
+    result.style.display = 'flex';
+    turn.innerHTML = '';
+}
+
+// Count Score for each player //
+
+function countScore(scorecount) {
+
+    if (scorecount === 'Player1') {
+        count1 = count1 + 1;
+        scorecount1.innerHTML = 'Player 1: ' + count1 ;
+    }
+
+    if (scorecount === 'Player2') {
+        count2 = count1 + 1;
+        scorecount2.innerHTML = 'Player 2: ' + count2 ;
+    }
+}
+
 
 // Restart the game //
 
-function restartGame() {
+function newGame() {
     result.style.display = 'none';
     turn.innerHTML = 'Player 1';
 
@@ -141,5 +168,5 @@ function restartGame() {
         ['', '', ''],
     ];
 
-    beginGame();
+    startGame();
 }
