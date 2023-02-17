@@ -54,8 +54,16 @@ function closePopup(options) {
 
 function startGame() {
     boardCell.forEach((cell, index) => {
-        cell.innerHTML = "";
+        resetBoard()
         cell.addEventListener("click", handleClick.bind(null, cell, index));
+    });
+}
+
+// Reset the board //
+
+function resetBoard() {
+    boardCell.forEach((cell, index) => {
+        cell.innerHTML = "";
     });
 }
 
@@ -84,14 +92,14 @@ function checkWinner() {
     for (let i = 0; i < 3; i++) {
         if (board[i][0] === board[i][1] && board[i][0] === board[i][2] && board[i][0] !== '') {
             showResult(board[i][0]);
-            return;
+            break;
         }
     }
 
     for (let i = 0; i < 3; i++) {
         if (board[0][i] === board[1][i] && board[0][i] === board[2][i] && board[0][i] !== '') {
             showResult(board[0][i]);
-            return;
+            break;
         }
     }
 
@@ -108,13 +116,17 @@ function checkWinner() {
     // Check for draw //
 
     var count = 0;
-    for (let i = 0; i < 3; i++) {
-        for (let i = 0; i < 3; i++) {
-            for (let j = 0; j < 3; j++) {
-                if (board[i][j] != '') {
-                    count++;
-                }
-            }
+    // for (let i = 0; i < 3; i++) {
+    //for (let i = 0; i < 3; i++) {
+    //for (let j = 0; j < 3; j++) {
+    //if (board[i][j] != '') {
+    //  count++;
+    // }
+    // }
+    //}
+    for (i in boardCell) {
+        if (boardCell[i].innerHTML) {
+            count++
         }
         if (count == 9) {
             showResult('Draw')
@@ -146,12 +158,12 @@ function countScore(scorecount) {
 
     if (scorecount === 'Player1') {
         count1 = count1 + 1;
-        scorecount1.innerHTML = 'Player 1: ' + count1 ;
+        scorecount1.innerHTML = 'Player 1: ' + count1;
     }
 
     if (scorecount === 'Player2') {
         count2 = count1 + 1;
-        scorecount2.innerHTML = 'Player 2: ' + count2 ;
+        scorecount2.innerHTML = 'Player 2: ' + count2;
     }
 }
 
@@ -161,12 +173,11 @@ function countScore(scorecount) {
 function newGame() {
     result.style.display = 'none';
     turn.innerHTML = 'Player 1';
-
     board = [
         ['', '', ''],
         ['', '', ''],
         ['', '', ''],
     ];
 
-    startGame();
+    resetBoard()
 }
