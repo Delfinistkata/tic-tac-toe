@@ -10,6 +10,8 @@ const scorecount1 = document.getElementById('scorecount1');
 const scorecount2 = document.getElementById('scorecount2');
 const result = document.querySelector('.result');
 
+
+
 var count1 = 0
 var count2 = 0
 var Player1 = "";
@@ -37,16 +39,13 @@ function closePopup(options) {
         Player2 = "O";
         player1.innerHTML = 'Player 1: X';
         player2.innerHTML = 'Player 2: O';
-
     } else {
         Player1 = "O";
         Player2 = "X";
         player1.innerHTML = 'Player 1: O';
         player2.innerHTML = 'Player 2: X';
     }
-
     startGame()
-
     document.getElementById("pop-up").style.display = "none";
 }
 
@@ -62,7 +61,7 @@ function startGame() {
 // Reset the board //
 
 function resetBoard() {
-    boardCell.forEach((cell, index) => {
+    boardCell.forEach((cell) => {
         cell.innerHTML = "";
     });
 }
@@ -95,19 +94,16 @@ function checkWinner() {
             break;
         }
     }
-
     for (let i = 0; i < 3; i++) {
         if (board[0][i] === board[1][i] && board[0][i] === board[2][i] && board[0][i] !== '') {
             showResult(board[0][i]);
             break;
         }
     }
-
     if (board[0][0] === board[1][1] && board[0][0] === board[2][2] && board[0][0] !== '') {
         showResult(board[0][0]);
         return;
     }
-
     if (board[0][2] === board[1][1] && board[0][2] === board[2][0] && board[0][2] !== '') {
         showResult(board[0][2]);
         return;
@@ -116,14 +112,6 @@ function checkWinner() {
     // Check for draw //
 
     var count = 0;
-    // for (let i = 0; i < 3; i++) {
-    //for (let i = 0; i < 3; i++) {
-    //for (let j = 0; j < 3; j++) {
-    //if (board[i][j] != '') {
-    //  count++;
-    // }
-    // }
-    //}
     for (i in boardCell) {
         if (boardCell[i].innerHTML) {
             count++
@@ -160,9 +148,8 @@ function countScore(scorecount) {
         count1 = count1 + 1;
         scorecount1.innerHTML = 'Player 1: ' + count1;
     }
-
     if (scorecount === 'Player2') {
-        count2 = count1 + 1;
+        count2 = count2 + 1;
         scorecount2.innerHTML = 'Player 2: ' + count2;
     }
 }
