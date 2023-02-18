@@ -25,6 +25,8 @@ body {
     font-family: 'Tajawal', sans-serif;
     text-align: center;
     margin: 10%;
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
 }
 
 .main-heading p {
@@ -156,16 +158,16 @@ img {
 
 #player1 {
     display: inline-block;
-    background-color: black;
-    color: whitesmoke;
-    font-size: larger;
+    color: black;
+    font-size: x-large;
+    font-weight: bold;
 }
 
 #player2 {
     display: inline-block;
-    background-color: black;
-    color: whitesmoke;
-    font-size: larger;
+    color: black;
+    font-size: x-large;
+    font-weight: bold;
 }
 
 /* Code from:https://www.tutorialstonight.com/tic-tac-toe-javascript */
@@ -200,19 +202,12 @@ img {
 
 /* Styling results area */
 .result {
-    /*position: fixed;
-    top: 217px;
-    left: 10px;
-    display: inline-flex;
-    align-items: center;
+    display: flex;
     justify-content: center;
-    background: #ffffff;
-    color: #000000;
-    font-size: 2.5rem;
+    align-items: center;
+    padding-top: 30px;
+    font-size: xx-large;
     font-weight: bold;
-    opacity: 0.7;
-    width: 300px;
-    height: 300px; */
 }
 
 .turn {
@@ -237,11 +232,10 @@ img {
 }
 
 .score p {
-
-    font-size: 1em;
     display: inline-block;
-    background-color: black;
-    color: whitesmoke;
+    color: black;
+    font-size: x-large;
+    font-weight: bold;
 }
 
 
