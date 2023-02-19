@@ -326,3 +326,21 @@
 
 <br>
 <br>
+
+## Features Left to Implement:
+
+* Multyplayer mode
+
+* Grid 4x4 and 5x5
+
+* Additional Pages:
+
+   - An additional page displaying the highest result.
+
+
+<br>
+
+**[Back to top](<#contents>)**
+
+<br>
+<br>
