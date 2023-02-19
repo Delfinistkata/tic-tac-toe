@@ -27,9 +27,6 @@ body {
     margin: 10%;
     text-decoration: underline;
     text-decoration-thickness: 5px;
-}
-
-.main-heading p {
     font-size: 3rem;
     text-shadow: 3px 3px 3px red;
 }
@@ -45,9 +42,6 @@ body {
     display: inline-block;
     background-color: red;
     box-shadow: 2px 2px;
-}
-
-.main-button p {
     font-size: 1em;
     text-shadow: 3px 3px 3px #000000;
     font-weight: 100;
@@ -87,13 +81,10 @@ img {
     font-family: 'Tajawal', sans-serif;
     text-align: center;
     margin: 5%;
+    text-shadow: 3px 3px 3px #000000;
 }
 
-.instructions p {
-    font-size: 1em;
-    text-shadow: 3px 3px 3px #000000;
-    font-weight: 100;
-}
+
 
 /* Code from https://www.w3schools.com/css/css3_flexbox_responsive.asp */
 /* Styling Instructions */

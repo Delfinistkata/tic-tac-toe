@@ -2,6 +2,8 @@
 
 // Selecting all elements //
 
+/*jshint esversion: 6 */
+
 const player1 = document.getElementById('player1');
 const player2 = document.getElementById('player2');
 const boardCell = document.querySelectorAll('.board-cell');
@@ -10,10 +12,10 @@ const scorecount1 = document.getElementById('scorecount1');
 const scorecount2 = document.getElementById('scorecount2');
 const result = document.querySelector('.result');
 // let finishGame = false; //
-let playing = false ;
 
-var count1 = 0
-var count2 = 0
+
+var count1 = 0;
+var count2 = 0;
 var Player1 = "";
 var Player2 = "";
 var board = [
@@ -31,7 +33,7 @@ function openPopup() {
 
 window.onload = function () {
     openPopup();
-}
+};
 
 // function disableBoard(){
     // boardCell.forEach((cell) => {
@@ -55,16 +57,15 @@ function closePopup(options) {
         player1.innerHTML = 'Player 1: O';
         player2.innerHTML = 'Player 2: X';
     }
-    startGame()
+    startGame();
     document.getElementById("pop-up").style.display = "none";
 }
 
 // Start the game //
 
 function startGame() {
-    playing = true;
     boardCell.forEach((cell, index) => {
-        resetBoard()
+        resetBoard();
         cell.addEventListener("click", handleClick.bind(null, cell, index));
     });
 }
@@ -72,7 +73,6 @@ function startGame() {
 // Reset the board //
 
 function resetBoard() {
-    playing = false ;
     //finishGame = false; //
      //openPopup(); //
     boardCell.forEach((cell) => {
@@ -134,10 +134,10 @@ function checkWinner() {
     var count = 0;
     for (i in boardCell) {
         if (boardCell[i].innerHTML) {
-            count++
+            count++;
         }
         if (count == 9) {
-            showResult('Draw')
+            showResult('Draw');
             return;
         }
     }
@@ -187,5 +187,5 @@ function newGame() {
         ['', '', ''],
         ['', '', ''],
     ];
-    resetBoard()
+    resetBoard();
 }
