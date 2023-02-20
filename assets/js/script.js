@@ -11,7 +11,7 @@ const turn = document.querySelector('.turn');
 const scorecount1 = document.getElementById('scorecount1');
 const scorecount2 = document.getElementById('scorecount2');
 const result = document.querySelector('.result');
-// let finishGame = false; //
+
 
 
 var count1 = 0;
@@ -35,16 +35,7 @@ window.onload = function () {
     openPopup();
 };
 
-// function disableBoard(){
-    // boardCell.forEach((cell) => {
-        // cell.style.pointerEvents = "none";
-    // });
-// }
-// function enableBoard(){
-   //  boardCell.forEach((cell) => {
-       // cell.style.cursor = "pointer";
-    // });
-// }
+
 function closePopup(options) {
     if (options === "X") {
         Player1 = "X";
@@ -73,22 +64,15 @@ function startGame() {
 // Reset the board //
 
 function resetBoard() {
-    //finishGame = false; //
-     //openPopup(); //
     boardCell.forEach((cell) => {
         cell.innerHTML = "";
     });
-    // enableBoard() //
+    document.getElementById('board').removeAttribute("style", "pointer-events: none;");
 }
 
 // Click event //
 
 function handleClick(cell, index) {
-    // checkWinner();
-    // if (finishGame === true ){
-        // disableBoard()
-        // return;
-    //  }
     const cellValue = cell.innerHTML;
     if (cellValue === '') {
         if (turn.innerHTML === 'Player 1') {
@@ -149,11 +133,11 @@ function checkWinner() {
 function showResult(symbol) {
     if (symbol === Player1) {
         result.innerHTML = 'Player 1 Win!';
-        // finishGame = true; //
+        document.getElementById("board").setAttribute("style", "pointer-events: none;");
         countScore('Player1');
     } else if (symbol === Player2) {
-       //  finishGame = true; //
         result.innerHTML = 'Player 2 Win!';
+        document.getElementById("board").setAttribute("style", "pointer-events: none;");
         countScore('Player2');
     } else {
         result.innerHTML = 'Draw!';
@@ -165,7 +149,6 @@ function showResult(symbol) {
 // Count Score for each player //
 
 function countScore(scorecount) {
-    // if (finishGame) return; //
     if (scorecount === 'Player1') {
         count1 = count1 + 1;
         scorecount1.innerHTML = 'Player 1: ' + count1;

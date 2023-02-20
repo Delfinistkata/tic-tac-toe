@@ -164,7 +164,7 @@ img {
 /* Code from:https://www.tutorialstonight.com/tic-tac-toe-javascript */
 /* Styling game board */
 
-.board {
+#board {
     display: contents;
     width: 300px;
     height: 300px;
