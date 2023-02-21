@@ -37,8 +37,8 @@
         <div class="choose-player">
             <p>Choose Player:</p>
 
-            <button class="choose-player-button" onclick="closePopup('X')"> X </button>
-            <button class="choose-player-button" onclick="closePopup('O')"> O </button>
+            <button class="choose-player-button" onclick="closePopupGame('X')"> X </button>
+            <button class="choose-player-button" onclick="closePopupGame('O')"> O </button>
         </div>
 
     </div>
@@ -93,9 +93,33 @@
         Home
     </button>
 
-    <button class="main-button rules" onclick="window.location.href='rules.html';">
+    <button class= "main-button rules open-feedback-form" id="open-rules-page">
         Rules
     </button>
+
+    <!--Code from https://www.w3schools.com/css/css3_flexbox_responsive.asp-->
+
+    <!--Pop-up Instructions-->
+
+    <div class="popup flex-container" id="hiderule">
+        <h2 class="instructions rule">
+            Instructions:
+        </h2>
+        <div class="flex-item-left">1. Players must select their mark before the game starts (either X or O) and must
+            play the entire game using the same mark.</div>
+        <div class="flex-item-right">2. Players must take turns, making only one mark with each turn.</div>
+        <div class="flex-item-left">3. Marks can only be placed in empty squares, and once it is placed, it is
+            permanent.</div>
+        <div class="flex-item-right">4. The winner is the first player to get three of their marks in a straight line
+            (the line can be positioned diagonally, vertically, or horizontally).</div>
+        <div class="flex-item-left">5. The game is over when all nine squares are filled with marks, even if none of the
+            players have a straight line of three marks.</div>
+        <div class="flex-item-right">6. If neither player has a straight line of three marks, it is considered a tie.
+        </div>
+        <img src="assets/images/think.jpg" alt="Two people thinking!">
+        <br>
+        <button class="close-rules close-feedback-form" id="close-instructions" type="button">Close</button>
+    </div>
 
 
 

@@ -188,6 +188,11 @@ img {
 /* Code from https://www.w3schools.com/css/css3_flexbox_responsive.asp */
 /* Styling Instructions */
 
+#hiderule {
+    display: none;
+}
+
+
 .flex-container {
     display: flex;
     flex-direction: column;

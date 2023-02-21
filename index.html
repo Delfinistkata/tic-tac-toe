@@ -20,9 +20,13 @@
         Tic-Tac-Toe
     </h1>
 
+
+<div id="pop-up"></div>
+
+
     <!--Buttons-->
 
-    <button class="main-button rules">
+    <button class="main-button rules open-feedback-form" id="open-rules-page">
         Rules
     </button>
 
@@ -39,7 +43,7 @@
 
     <!--Pop-up Instructions-->
 
-    <div class="flex-container">
+    <div class="popup flex-container" id="hiderule">
         <h2 class="instructions rule">
             Instructions:
         </h2>
@@ -56,12 +60,8 @@
         </div>
         <img src="assets/images/think.jpg" alt="Two people thinking!">
         <br>
-        <button class="close-rules" id="close-instructions" type="button">Close</button>
+        <button class="close-rules close-feedback-form" id="close-instructions" type="button">Close</button>
     </div>
-
-
-
-
 
 
     <!--Pop-up feedback form-->

@@ -11,8 +11,8 @@ const turn = document.querySelector('.turn');
 const scorecount1 = document.getElementById('scorecount1');
 const scorecount2 = document.getElementById('scorecount2');
 const result = document.querySelector('.result');
-
-
+let evaluationAndRuleButtons = document.getElementsByClassName("open-feedback-form");
+let closeEvaluationAndRule = document.getElementsByClassName("close-feedback-form");
 
 var count1 = 0;
 var count2 = 0;
@@ -26,20 +26,17 @@ var board = [
 
 
 //Add event listener to buttons opening the popups
-let openPopupButtons = document.getElementsByClassName("open-feedback-form");
 
-for (let button of openPopupButtons) {
+for (let button of evaluationAndRuleButtons) {
     button.addEventListener("click", function () {
         let buttonSelected = this.getAttribute("id");
-
         openPopup(buttonSelected);
     });
 }
 
 //Add event listener to close buttons on the popups
-let closePopupButtons = document.getElementsByClassName("close-feedback-form");
 
-for (let button of closePopupButtons) {
+for (let button of closeEvaluationAndRule) {
     button.addEventListener("click", function () {
         let buttonSelected = this.getAttribute("id");
 
@@ -55,43 +52,35 @@ for (let button of closePopupButtons) {
 function openPopup(button) {
     if (button === "open-evaluation-form") {
         document.getElementById("main-feedback-form").style.display = "block";
-    } else if (button === "open-rules-btn") {
-        document.getElementById("rules").style.display = "block";
-    } else {
-        alert(`Unknown button: ${button}`);
-        throw `Unknown butoon: ${button}. Aborting!`;
-    }
+    } else if (button === "open-rules-page") {
+        document.getElementById("hiderule").style.display = "block";
+    } 
 }
 
 /**
  * Close the pop up if close button is pressed
  */
 function closePopup(button) {
-    if (button === "close-feedback-btn") {
+    if (button === "close-feedback-form") {
         document.getElementById("main-feedback-form").style.display = "none";
-    } else if (button === "close-rules-btn") {
-        document.getElementById("rules").style.display = "none";
-    } else {
-        alert(`Unknown button: ${button}`);
-        throw `Unknown button: ${button}. Aborting!`;
-    }
+    } else if (button === "close-instructions") {
+        document.getElementById("hiderule").style.display = "none";
+    } 
 }
 
 
+//Pop up message on Game board //
+
+function openPopupGame() {
+    document.getElementById("pop-up").style.display = "block";
+}
+
+window.onload = function () {
+    openPopupGame();
+ };
 
 
-//Pop up message //
-
- // function openPopup() {
- //   document.getElementById("pop-up").style.display = "block";
-//}
-
-//window.onload = function () {
- //   openPopup();
-//};
-
-
-function closePopup(options) {
+function closePopupGame(options) {
     if (options === "X") {
         Player1 = "X";
         Player2 = "O";
