@@ -72,6 +72,89 @@ img {
     margin: 5%;
 }
 
+/* =================================================== https://github.com/josswe26/rpsls */
+/* Style pop-ups throught the website*/
+.popup {
+    width: 250px;
+    top: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    border-radius: 10px
+}
+
+/* Pop up form styling - hidden by deafult */
+.feedback-popup {
+    display: none;
+}
+
+/* https://blog.logrocket.com/five-cool-css-header-styles-with-cross-browser-compatibility/ */
+.feedback-popup h2 {
+    font-size: 2em;
+    margin: 15px auto;
+    text-shadow: 1px 1px 1px #ff0808,
+        1px 2px 1px #ff3400,
+        1px 3px 1px #ff0707,
+        1px 4px 1px #ff0202,
+        1px 5px 1px #ff0000,
+        1px 6px 1px #ff0000,
+        1px 10px 5px rgb(16 16 16 / 50%),
+        1px 15px 10px rgb(16 16 16 / 40%),
+        1px 20px 30px rgb(16 16 16 / 30%),
+        1px 25px 50px rgb(16 16 16 / 20%);
+}
+
+
+.feedback-area {
+    padding: 5px;
+    color: #ffffff;
+    background-color: #271f1fef;
+    border-radius: 25px;
+}
+
+.feedback-area input,
+.feedback-area textarea {
+    display: block;
+    padding: 10px;
+    margin: 11px auto 11px;
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    background: #000000ef;
+}
+
+.feedback-area input:focus {
+    border-color: #00fffb;
+}
+
+.feedback-area button {
+    margin: 2%;
+    padding: 10px;
+    cursor: pointer;
+    display: inline-block;
+    background-color: red;
+    box-shadow: 1px 1px white;
+    font-size: 1em;
+    font-weight: bold;
+    width: 80%;
+}
+
+
+
+#close-feedback-btn:hover,
+#close-rules-btn:hover {
+    background-color: #ffffff;
+}
+
+.feedback-area button:hover,
+.feedback-area #cancel-btn:hover {
+    background-color: #ffffff;
+}
+
+
+/*====================================================== */
+
 /*Styling Rules Page */
 /* Styling Rules heading */
 

@@ -25,15 +25,70 @@ var board = [
 ];
 
 
-//Pop up message //
+//Add event listener to buttons opening the popups
+let openPopupButtons = document.getElementsByClassName("open-feedback-form");
 
-function openPopup() {
-    document.getElementById("pop-up").style.display = "block";
+for (let button of openPopupButtons) {
+    button.addEventListener("click", function () {
+        let buttonSelected = this.getAttribute("id");
+
+        openPopup(buttonSelected);
+    });
 }
 
-window.onload = function () {
-    openPopup();
-};
+//Add event listener to close buttons on the popups
+let closePopupButtons = document.getElementsByClassName("close-feedback-form");
+
+for (let button of closePopupButtons) {
+    button.addEventListener("click", function () {
+        let buttonSelected = this.getAttribute("id");
+
+        closePopup(buttonSelected);
+    });
+}
+
+//Popups functions
+
+/**
+ * Open the pop up when pressing the respective button
+ */
+function openPopup(button) {
+    if (button === "open-evaluation-form") {
+        document.getElementById("main-feedback-form").style.display = "block";
+    } else if (button === "open-rules-btn") {
+        document.getElementById("rules").style.display = "block";
+    } else {
+        alert(`Unknown button: ${button}`);
+        throw `Unknown butoon: ${button}. Aborting!`;
+    }
+}
+
+/**
+ * Close the pop up if close button is pressed
+ */
+function closePopup(button) {
+    if (button === "close-feedback-btn") {
+        document.getElementById("main-feedback-form").style.display = "none";
+    } else if (button === "close-rules-btn") {
+        document.getElementById("rules").style.display = "none";
+    } else {
+        alert(`Unknown button: ${button}`);
+        throw `Unknown button: ${button}. Aborting!`;
+    }
+}
+
+
+
+
+//Pop up message //
+
+ // function openPopup() {
+ //   document.getElementById("pop-up").style.display = "block";
+//}
+
+//window.onload = function () {
+ //   openPopup();
+//};
 
 
 function closePopup(options) {

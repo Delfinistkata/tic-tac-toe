@@ -14,17 +14,48 @@
 
 <body>
 
+    <!--Heading-->
+
     <h1 class="main-heading p">
         Tic-Tac-Toe 
     </h1>
 
+<!--Buttons-->
+
     <button class="main-button rules" onclick="window.location.href='rules.html';">
         Rules
     </button>
+    
 
     <button class="main-button new-game" onclick="window.location.href='game.html';">
         New Game
     </button>
+
+    <button class="main-button open-feedback-form" id="open-evaluation-form">
+        Feedback
+    </button>
+
+    <!--Pop-up feedback form-->
+
+    <div class="popup feedback-popup" id="main-feedback-form">
+        <form class="feedback-area" action="https://formdump.codeinstitute.net" method="POST">
+            <h2>Your Feedback:</h2>
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="full-name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="comment">Comment</label>
+            <textarea id="comment" name="comment" rows="6" required></textarea>
+
+            <button  type="submit">Send Feedback</button>
+            <button class="close-feedback-form" id="close-feedback-form" type="button">Close</button>
+        </form>
+    </div>
+
+
 
     <img src="assets/images/tic-tac-toe.png" alt="Tic tac toe board">
 
