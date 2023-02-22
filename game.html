@@ -14,34 +14,49 @@
 
 <body>
 
+    <!--Heading-->
     <h1 class="main-heading p">
-        Tic-Tac-Toe 
+        Tic-Tac-Toe
     </h1>
 
     <!--Player's Mode-->
-
-<div class="players-mode">
-    <div id="player1">
-        Player 1:
-    </div>
-
-    <div id="player2">
-        Player 2:
-    </div>
-</div>
-
-
-    <!--Pop up message-->
-
-    <div id="pop-up">
-        <div class="choose-player">
-            <p>Choose Player:</p>
-
-            <button class="choose-player-button" onclick="closePopupGame('X')"> X </button>
-            <button class="choose-player-button" onclick="closePopupGame('O')"> O </button>
+    <div class="players-mode">
+        <div id="player1">
+            Player 1:
         </div>
 
+        <div id="player2">
+            Player 2:
+        </div>
     </div>
+
+
+    <!--Pop up message and level of difficulty-->
+
+    <form id="pop-up">
+        <div class="choose-player">
+            <p>Level of difficulty:</p>
+            <input type="radio" id="easy" name="pickone" value="easy">
+            <label for="easy">Easy</label><br>
+            <input type="radio" id="medium" name="pickone" value="medium">
+            <label for="medium">Medium</label><br>
+            <input type="radio" id="hard" name="pickone" value="hard">
+            <label for="hard">Hard</label><br>
+
+            <br>
+
+            <p>Choose Player:</p>
+            <input type="radio" id="player1" name="selectone" value="X" class="choose-player-button"
+                onclick="closePopupGame('X')">
+            <label for="player1">X</label><br>
+            <input type="radio" id="player2" name="selectone" value="O" class="choose-player-button"
+                onclick="closePopupGame('O')">
+            <label for="player2">O</label><br>
+
+            <br>
+        </div>
+    </form>
+
 
     <!--Code from:https://www.tutorialstonight.com/tic-tac-toe-javascript-->
 
@@ -66,9 +81,8 @@
         <div class="result"></div>
     </div>
 
-    <!--Turn of the player-->
+    <!--Showing Player's Turn-->
     <div class="turn">Player 1</div>
-
 
     <!--Score area-->
     <div class="score">
@@ -84,7 +98,6 @@
     </div>
 
     <!--Buttons-->
-
     <button class="main-button reset" onclick="newGame()">
         Reset
     </button>
@@ -93,12 +106,11 @@
         Home
     </button>
 
-    <button class= "main-button rules open-feedback-form" id="open-rules-page">
+    <button class="main-button rules open-feedback-form" id="open-rules-page">
         Rules
     </button>
 
     <!--Code from https://www.w3schools.com/css/css3_flexbox_responsive.asp-->
-
     <!--Pop-up Instructions-->
 
     <div class="popup flex-container" id="hiderule">
@@ -121,11 +133,9 @@
         <button class="close-rules close-feedback-form" id="close-instructions" type="button">Close</button>
     </div>
 
-
-
     <!--Footer-->
-
     <footer>
+
         <div class="copyright">
             <p> &#169; Copyright 2023 - For Educational Purposes Only</p>
         </div>
