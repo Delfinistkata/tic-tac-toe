@@ -244,6 +244,21 @@ img {
     font-weight: bold;
 }
 
+#error {
+    display: none;
+    color: darkred;
+}
+
+#congratulations {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 5%);
+    border: 3px solid #000000;
+    z-index: 9;
+}
+
 /* Styling Player's Mode */
 
 .players-mode {

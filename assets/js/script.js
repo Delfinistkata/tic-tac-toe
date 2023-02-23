@@ -2,8 +2,6 @@
 
 // Selecting all elements //
 
-/*jshint esversion: 6 */
-
 const player1 = document.getElementById('player1');
 const player2 = document.getElementById('player2');
 const boardCell = document.querySelectorAll('.board-cell');
@@ -11,9 +9,14 @@ const turn = document.querySelector('.turn');
 const scorecount1 = document.getElementById('scorecount1');
 const scorecount2 = document.getElementById('scorecount2');
 const result = document.querySelector('.result');
+const radioButtons = document.querySelectorAll('input[name="pickone"]');
 let evaluationAndRuleButtons = document.getElementsByClassName("open-feedback-form");
 let closeEvaluationAndRule = document.getElementsByClassName("close-feedback-form");
+let congratulations = document.getElementById("congratulations");
 
+let i = "";
+let selectedLevel = "";
+let winNumber = 0;
 var count1 = 0;
 var count2 = 0;
 var Player1 = "";
@@ -54,7 +57,7 @@ function openPopup(button) {
         document.getElementById("main-feedback-form").style.display = "block";
     } else if (button === "open-rules-page") {
         document.getElementById("hiderule").style.display = "block";
-    } 
+    }
 }
 
 /**
@@ -65,7 +68,7 @@ function closePopup(button) {
         document.getElementById("main-feedback-form").style.display = "none";
     } else if (button === "close-instructions") {
         document.getElementById("hiderule").style.display = "none";
-    } 
+    }
 }
 
 
@@ -77,23 +80,44 @@ function openPopupGame() {
 
 window.onload = function () {
     openPopupGame();
- };
+};
 
 
 function closePopupGame(options) {
-    if (options === "X") {
-        Player1 = "X";
-        Player2 = "O";
-        player1.innerHTML = 'Player 1: X';
-        player2.innerHTML = 'Player 2: O';
-    } else {
-        Player1 = "O";
-        Player2 = "X";
-        player1.innerHTML = 'Player 1: O';
-        player2.innerHTML = 'Player 2: X';
+    for (const radioButton of radioButtons) {
+        if (radioButton.checked) {
+            selectedLevel = radioButton.value;
+            if (selectedLevel === "easy") {
+                winNumber = 3;
+            }
+            if (selectedLevel === "medium") {
+                winNumber = 5;
+            }
+            if (selectedLevel === "hard") {
+                winNumber = 7;
+            }
+            break;
+        }
     }
-    startGame();
-    document.getElementById("pop-up").style.display = "none";
+
+    if (selectedLevel === "") {
+        document.getElementById("error").style.display = "block";
+    } else {
+        if (options === "X") {
+            Player1 = "X";
+            Player2 = "O";
+            player1.innerHTML = 'Player 1: X';
+            player2.innerHTML = 'Player 2: O';
+        } else {
+            Player1 = "O";
+            Player2 = "X";
+            player1.innerHTML = 'Player 1: O';
+            player2.innerHTML = 'Player 2: X';
+        }
+        startGame();
+        document.getElementById("pop-up").style.display = "none";
+    }
+
 }
 
 // Start the game //
@@ -169,7 +193,6 @@ function checkWinner() {
             return;
         }
     }
-
 }
 
 // Show the Results //
@@ -190,16 +213,25 @@ function showResult(symbol) {
     turn.innerHTML = '';
 }
 
-// Count Score for each player //
+// Count Score for each player and Show pop up after winning 3,5,7 times//
 
 function countScore(scorecount) {
     if (scorecount === 'Player1') {
         count1 = count1 + 1;
         scorecount1.innerHTML = 'Player 1: ' + count1;
+        if (count1 === winNumber) {
+            congratulations.innerHTML = 'Congratulations Player 1 won ' + winNumber + ' times';
+            document.getElementById("congratulations").style.display = "block";
+        }
     }
+
     if (scorecount === 'Player2') {
         count2 = count2 + 1;
         scorecount2.innerHTML = 'Player 2: ' + count2;
+        if (count2 === winNumber) {
+            congratulations.innerHTML = 'Congratulations Player 2 won ' + winNumber + ' times';
+            document.getElementById("congratulations").style.display = "block";
+        }
     }
 }
 
