@@ -252,11 +252,16 @@ img {
 #congratulations {
     display: none;
     position: absolute;
-    top: 40%;
     left: 50%;
     transform: translate(-50%, 5%);
     border: 3px solid #000000;
     z-index: 9;
+    background: rgba(255, 0, 0, 0.778);
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bold;
+    padding: 12%;
+    top: 50%;
 }
 
 /* Styling Player's Mode */
