@@ -175,16 +175,16 @@ img {
 .instructions {
     font-size: 2em;
     margin: 15px auto;
-    text-shadow: 1px 1px 1px #ff0808, 
-    1px 2px 1px #ff3400, 
-    1px 3px 1px #ff0707, 
-    1px 4px 1px #ff0202, 
-    1px 5px 1px #ff0000, 
-    1px 6px 1px #ff0000, 
-    1px 10px 5px rgb(16 16 16 / 50%), 
-    1px 15px 10px rgb(16 16 16 / 40%), 
-    1px 20px 30px rgb(16 16 16 / 30%), 
-    1px 25px 50px rgb(16 16 16 / 20%);
+    text-shadow: 1px 1px 1px #ff0808,
+        1px 2px 1px #ff3400,
+        1px 3px 1px #ff0707,
+        1px 4px 1px #ff0202,
+        1px 5px 1px #ff0000,
+        1px 6px 1px #ff0000,
+        1px 10px 5px rgb(16 16 16 / 50%),
+        1px 15px 10px rgb(16 16 16 / 40%),
+        1px 20px 30px rgb(16 16 16 / 30%),
+        1px 25px 50px rgb(16 16 16 / 20%);
 }
 
 
@@ -203,7 +203,8 @@ img {
     flex-direction: column;
     font-size: 20px;
     text-align: center;
-    background-color: #000000cc;;
+    background-color: #000000cc;
+    ;
     color: ghostwhite;
     margin: 2%;
 }
@@ -262,6 +263,10 @@ img {
     font-weight: bold;
     padding: 12%;
     top: 50%;
+}
+
+.ok-button {
+    
 }
 
 /* Styling Player's Mode */

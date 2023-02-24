@@ -9,10 +9,14 @@ const turn = document.querySelector('.turn');
 const scorecount1 = document.getElementById('scorecount1');
 const scorecount2 = document.getElementById('scorecount2');
 const result = document.querySelector('.result');
+const btnFinishGame = document.getElementById('finish-game');
 const radioButtons = document.querySelectorAll('input[name="pickone"]');
+const radioButtonsSelectOne = document.querySelectorAll('input[name="selectone"]');
 let evaluationAndRuleButtons = document.getElementsByClassName("open-feedback-form");
 let closeEvaluationAndRule = document.getElementsByClassName("close-feedback-form");
-let congratulations = document.getElementById("congratulations");
+const msgCongratulations = document.getElementById("msg-congratulations");
+const disablebtn = document.getElementById("disable-btn");
+
 
 let i = "";
 let selectedLevel = "";
@@ -27,6 +31,11 @@ var board = [
     ['', '', '']
 ];
 
+btnFinishGame.addEventListener("click", function () {
+    document.getElementById("congratulations").style.display = "none";
+    closePopupGame();
+    newGame();
+});
 
 //Add event listener to buttons opening the popups
 
@@ -108,6 +117,7 @@ function closePopupGame(options) {
             Player2 = "O";
             player1.innerHTML = 'Player 1: X';
             player2.innerHTML = 'Player 2: O';
+            console.log(Player1);
         } else {
             Player1 = "O";
             Player2 = "X";
@@ -142,9 +152,12 @@ function resetBoard() {
 
 function handleClick(cell, index) {
     const cellValue = cell.innerHTML;
+    console.log(turn.innerHTML);
+    console.log(Player1)
     if (cellValue === '') {
         if (turn.innerHTML === 'Player 1') {
             cell.innerHTML = Player1;
+            console.log(Player1);
             turn.innerHTML = 'Player 2';
             board[Math.floor(index / 3)][index % 3] = Player1;
         } else {
@@ -219,9 +232,11 @@ function countScore(scorecount) {
     if (scorecount === 'Player1') {
         count1 = count1 + 1;
         scorecount1.innerHTML = 'Player 1: ' + count1;
+        console.log(count1);
         if (count1 === winNumber) {
-            congratulations.innerHTML = 'Congratulations Player 1 won ' + winNumber + ' times';
+            msgCongratulations.innerText =  'Congratulations Player 1 won ' + winNumber + ' times';
             document.getElementById("congratulations").style.display = "block";
+            disablebtn.disabled = true;
         }
     }
 
@@ -229,16 +244,17 @@ function countScore(scorecount) {
         count2 = count2 + 1;
         scorecount2.innerHTML = 'Player 2: ' + count2;
         if (count2 === winNumber) {
-            congratulations.innerHTML = 'Congratulations Player 2 won ' + winNumber + ' times';
+            msgCongratulations.innerText =  'Congratulations Player 2 won ' + winNumber + ' times';
             document.getElementById("congratulations").style.display = "block";
+            disablebtn.disabled = true;
         }
     }
 }
 
 
-// Restart the game //
+// Restart the board //
 
-function newGame() {
+function newBoard() {
     result.style.display = 'none';
     turn.innerHTML = 'Player 1';
     board = [
@@ -246,5 +262,26 @@ function newGame() {
         ['', '', ''],
         ['', '', ''],
     ];
+    resetBoard();
+}
+
+// Start a new game //
+
+function newGame() {
+    count1 = 0;
+    count2 = 0;
+    Player1 = "";
+    Player2 = "";
+    winNumber = 0;
+    openPopupGame();
+    result.innerHTML = 'Player 1';
+    scorecount1.innerHTML = 'Player 1: 0';
+    scorecount2.innerHTML = 'Player 2: 0';
+    for (const radioButton of radioButtons) {
+        radioButton.checked = false;
+    }
+    for (const radioButton of radioButtonsSelectOne) {
+        radioButton.checked = false;
+    }
     resetBoard();
 }

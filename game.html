@@ -83,9 +83,16 @@
     </div>
 
     <!--Showing Player's Turn-->
-    <div class="turn">Player 1</div>
-<!--...-->
-<div id="congratulations" ></div>
+    <div class="turn">Player 1
+
+    </div>
+
+    <!--Pop-up after winning 3,5,7 times-->
+
+    <div id="congratulations">
+        <label id="msg-congratulations">Congratulations Player 2 won</label>
+        <button class="ok-button" id="finish-game">OK</button>
+    </div>
 
     <!--Score area-->
     <div class="score">
@@ -101,7 +108,7 @@
     </div>
 
     <!--Buttons-->
-    <button class="main-button reset" onclick="newGame()">
+    <button class="main-button reset" id="disable-btn" onclick="newBoard()">
         Reset
     </button>
 
