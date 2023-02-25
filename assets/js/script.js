@@ -31,11 +31,14 @@ var board = [
     ['', '', '']
 ];
 
+// Event listener for OK button on pop up //
+if ( window.location.pathname === "/game.html") {
 btnFinishGame.addEventListener("click", function () {
     document.getElementById("congratulations").style.display = "none";
     closePopupGame();
     newGame();
 });
+}
 
 //Add event listener to buttons opening the popups
 
@@ -51,13 +54,11 @@ for (let button of evaluationAndRuleButtons) {
 for (let button of closeEvaluationAndRule) {
     button.addEventListener("click", function () {
         let buttonSelected = this.getAttribute("id");
-
         closePopup(buttonSelected);
     });
 }
 
 //Popups functions
-
 /**
  * Open the pop up when pressing the respective button
  */
@@ -117,7 +118,6 @@ function closePopupGame(options) {
             Player2 = "O";
             player1.innerHTML = 'Player 1: X';
             player2.innerHTML = 'Player 2: O';
-            console.log(Player1);
         } else {
             Player1 = "O";
             Player2 = "X";
@@ -152,12 +152,9 @@ function resetBoard() {
 
 function handleClick(cell, index) {
     const cellValue = cell.innerHTML;
-    console.log(turn.innerHTML);
-    console.log(Player1)
     if (cellValue === '') {
         if (turn.innerHTML === 'Player 1') {
             cell.innerHTML = Player1;
-            console.log(Player1);
             turn.innerHTML = 'Player 2';
             board[Math.floor(index / 3)][index % 3] = Player1;
         } else {
@@ -232,9 +229,8 @@ function countScore(scorecount) {
     if (scorecount === 'Player1') {
         count1 = count1 + 1;
         scorecount1.innerHTML = 'Player 1: ' + count1;
-        console.log(count1);
         if (count1 === winNumber) {
-            msgCongratulations.innerText =  'Congratulations Player 1 won ' + winNumber + ' times';
+            msgCongratulations.innerText = 'Congratulations Player 1 won ' + winNumber + ' times';
             document.getElementById("congratulations").style.display = "block";
             disablebtn.disabled = true;
         }
@@ -244,7 +240,7 @@ function countScore(scorecount) {
         count2 = count2 + 1;
         scorecount2.innerHTML = 'Player 2: ' + count2;
         if (count2 === winNumber) {
-            msgCongratulations.innerText =  'Congratulations Player 2 won ' + winNumber + ' times';
+            msgCongratulations.innerText = 'Congratulations Player 2 won ' + winNumber + ' times';
             document.getElementById("congratulations").style.display = "block";
             disablebtn.disabled = true;
         }
@@ -265,16 +261,19 @@ function newBoard() {
     resetBoard();
 }
 
-// Start a new game //
+// Start a new game and open pop up with options and deselect previous options//
 
 function newGame() {
     count1 = 0;
     count2 = 0;
     Player1 = "";
     Player2 = "";
+    turn.innerHTML === 'Player 1';
+    player1.innerHTML = 'Player 1:';
+    player2.innerHTML = 'Player 2:';
     winNumber = 0;
     openPopupGame();
-    result.innerHTML = 'Player 1';
+    disablebtn.disabled = false;
     scorecount1.innerHTML = 'Player 1: 0';
     scorecount2.innerHTML = 'Player 2: 0';
     for (const radioButton of radioButtons) {
@@ -283,5 +282,5 @@ function newGame() {
     for (const radioButton of radioButtonsSelectOne) {
         radioButton.checked = false;
     }
-    resetBoard();
+    newBoard();
 }
