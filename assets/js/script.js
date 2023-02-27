@@ -25,6 +25,7 @@ var count1 = 0;
 var count2 = 0;
 var Player1 = "";
 var Player2 = "";
+var firstgame = true;
 var board = [
     ['', '', ''],
     ['', '', ''],
@@ -40,7 +41,7 @@ btnFinishGame.addEventListener("click", function () {
 });
 }
 
-//Add event listener to buttons opening the popups
+// Event listener to buttons opening the popups //
 
 for (let button of evaluationAndRuleButtons) {
     button.addEventListener("click", function () {
@@ -49,7 +50,7 @@ for (let button of evaluationAndRuleButtons) {
     });
 }
 
-//Add event listener to close buttons on the popups
+// Event listener to close buttons on the popups //
 
 for (let button of closeEvaluationAndRule) {
     button.addEventListener("click", function () {
@@ -94,6 +95,7 @@ window.onload = function () {
 
 
 function closePopupGame(options) {
+    console.log("POPUPGAME");
     for (const radioButton of radioButtons) {
         if (radioButton.checked) {
             selectedLevel = radioButton.value;
@@ -132,11 +134,15 @@ function closePopupGame(options) {
 
 // Start the game //
 
-function startGame() {
+function startGame() { 
+    if(firstgame === true) {
     boardCell.forEach((cell, index) => {
         resetBoard();
         cell.addEventListener("click", handleClick.bind(null, cell, index));
     });
+}
+
+firstgame = false;
 }
 
 // Reset the board //
@@ -170,6 +176,7 @@ function handleClick(cell, index) {
 // Check for the Winner //
 
 function checkWinner() {
+    console.log("CHECKED WINNER");
     for (let i = 0; i < 3; i++) {
         if (board[i][0] === board[i][1] && board[i][0] === board[i][2] && board[i][0] !== '') {
             showResult(board[i][0]);
@@ -208,6 +215,7 @@ function checkWinner() {
 // Show the Results //
 
 function showResult(symbol) {
+    console.log("showResult");
     if (symbol === Player1) {
         result.innerHTML = 'Player 1 Win!';
         document.getElementById("board").setAttribute("style", "pointer-events: none;");
@@ -268,7 +276,7 @@ function newGame() {
     count2 = 0;
     Player1 = "";
     Player2 = "";
-    turn.innerHTML === 'Player 1';
+    turn.innerHTML = 'Player 1';
     player1.innerHTML = 'Player 1:';
     player2.innerHTML = 'Player 2:';
     winNumber = 0;
