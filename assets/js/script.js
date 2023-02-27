@@ -95,7 +95,6 @@ window.onload = function () {
 
 
 function closePopupGame(options) {
-    console.log("POPUPGAME");
     for (const radioButton of radioButtons) {
         if (radioButton.checked) {
             selectedLevel = radioButton.value;
@@ -176,7 +175,6 @@ function handleClick(cell, index) {
 // Check for the Winner //
 
 function checkWinner() {
-    console.log("CHECKED WINNER");
     for (let i = 0; i < 3; i++) {
         if (board[i][0] === board[i][1] && board[i][0] === board[i][2] && board[i][0] !== '') {
             showResult(board[i][0]);
@@ -215,7 +213,6 @@ function checkWinner() {
 // Show the Results //
 
 function showResult(symbol) {
-    console.log("showResult");
     if (symbol === Player1) {
         result.innerHTML = 'Player 1 Win!';
         document.getElementById("board").setAttribute("style", "pointer-events: none;");
