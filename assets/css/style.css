@@ -40,10 +40,11 @@ body {
     font-size: 1em;
     cursor: pointer;
     display: inline-block;
-    background-color: red;
+    background-color: #ff0000;
+    ;
     box-shadow: 2px 2px;
     font-size: 1em;
-    text-shadow: 3px 3px 3px #000000;
+    text-shadow: 3px 3px 3px #00000069;
     font-weight: 100;
 }
 
@@ -70,11 +71,13 @@ body {
 
 img {
     margin: 5%;
+    padding: 5%;
 }
 
 /* Image on Rules pop up */
 .thinking-img {
     width: inherit;
+    margin: auto;
 }
 
 /* =================================================== https://github.com/josswe26/rpsls */
@@ -199,14 +202,18 @@ img {
 
 
 .flex-container {
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
+    display: block;
+    width: 250px;
+    top: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
     text-align: center;
+    position: absolute;
+    border-radius: 10px;
+    font-size: 11px;
     background-color: #000000cc;
-    ;
     color: ghostwhite;
-    margin: 2%;
 }
 
 .flex-item-left {
@@ -265,9 +272,6 @@ img {
     top: 50%;
 }
 
-.ok-button {
-    
-}
 
 /* Styling Player's Mode */
 
@@ -374,11 +378,35 @@ footer {
 
 
 .copyright p {
-    background-color: rgb(102 102 102);
+    background-color: rgb(34 3 3);
     font-size: 0.8em;
     line-height: 70px;
     text-transform: capitalize;
     letter-spacing: 1px;
-    color: ghostwhite;
+    color: white;
     text-align: center;
+}
+
+
+/* Media Queries */
+
+/* Small devices (mobile phones 550px and up) */
+@media only screen and (min-width: 550px) {
+    #pop-up {
+        top: 50%;
+    }
+}
+
+/* Medium devices (tablets 870px and up) */
+@media only screen and (min-width: 870px) {
+    #pop-up {
+        top: 60%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1205px and up) */
+@media only screen and (min-width: 1205px) {
+    #pop-up {
+        top: 70%;
+    }
 }
