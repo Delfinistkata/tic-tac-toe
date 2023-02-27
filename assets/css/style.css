@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
 
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -18,7 +17,6 @@ body {
 }
 
 /*Heading*/
-
 .main-heading {
     font-weight: 500;
     color: #000000;
@@ -33,7 +31,6 @@ body {
 
 /* Home Page styling */
 /*Buttons- Home Page*/
-
 .main-button {
     margin: 3%;
     padding: 20px;
@@ -41,7 +38,6 @@ body {
     cursor: pointer;
     display: inline-block;
     background-color: #ff0000;
-    ;
     box-shadow: 2px 2px;
     font-size: 1em;
     text-shadow: 3px 3px 3px #00000069;
@@ -50,7 +46,6 @@ body {
 
 
 /* Hover effect on all buttons */
-
 .rules:hover {
     color: whitesmoke
 }
@@ -68,7 +63,6 @@ body {
 }
 
 /*Image on home page */
-
 img {
     margin: 5%;
     padding: 5%;
@@ -80,7 +74,7 @@ img {
     margin: auto;
 }
 
-/* =================================================== https://github.com/josswe26/rpsls */
+/* https://github.com/josswe26/rpsls */
 /* Style pop-ups throught the website*/
 .popup {
     width: 250px;
@@ -113,7 +107,6 @@ img {
         1px 20px 30px rgb(16 16 16 / 30%),
         1px 25px 50px rgb(16 16 16 / 20%);
 }
-
 
 .feedback-area {
     padding: 5px;
@@ -169,12 +162,9 @@ img {
     background-color: #ffffff;
 }
 
-
-/*====================================================== */
-
 /*Styling Rules Page */
-/* Styling Rules heading */
 
+/* Styling Rules heading */
 .instructions {
     font-size: 2em;
     margin: 15px auto;
@@ -190,16 +180,12 @@ img {
         1px 25px 50px rgb(16 16 16 / 20%);
 }
 
-
-
-
 /* Code from https://www.w3schools.com/css/css3_flexbox_responsive.asp */
-/* Styling Instructions */
 
+/* Styling Instructions */
 #hiderule {
     display: none;
 }
-
 
 .flex-container {
     display: block;
@@ -217,19 +203,16 @@ img {
 }
 
 .flex-item-left {
-
     padding: 10px;
     flex: 50%;
 }
 
 .flex-item-right {
-
     padding: 10px;
     flex: 50%;
 }
 
 /* Styling pop up mesage for choosing player */
-
 #pop-up {
     display: flex;
     position: absolute;
@@ -273,9 +256,7 @@ img {
     top: 50%;
 }
 
-
 /* Styling Player's Mode */
-
 .players-mode {
     display: flex;
     flex-direction: row;
@@ -301,8 +282,8 @@ img {
 }
 
 /* Code from:https://www.tutorialstonight.com/tic-tac-toe-javascript */
-/* Styling game board */
 
+/* Styling game board */
 #board {
     display: contents;
     width: 300px;
@@ -318,7 +299,7 @@ img {
     align-items: center;
 }
 
-.board-cell {
+.game-board {
     width: 100px;
     height: 100px;
     border: 1px solid black;
@@ -349,7 +330,6 @@ img {
     font-weight: bold;
 }
 
-
 /* Styling score area */
 .score {
     display: flex;
@@ -368,7 +348,6 @@ img {
     font-weight: bold;
 }
 
-
 /* footer */
 footer {
     width: 100%;
@@ -376,7 +355,6 @@ footer {
     height: 70px;
     margin-top: auto;
 }
-
 
 .copyright p {
     background-color: rgb(34 3 3);
@@ -387,7 +365,6 @@ footer {
     color: white;
     text-align: center;
 }
-
 
 /* Media Queries */
 

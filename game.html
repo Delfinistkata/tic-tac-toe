@@ -13,7 +13,6 @@
 </head>
 
 <body>
-
     <!--Heading-->
     <h1 class="main-heading p">
         Tic-Tac-Toe
@@ -29,7 +28,6 @@
             Player 2:
         </div>
     </div>
-
 
     <!--Pop up message and level of difficulty-->
 
@@ -58,26 +56,24 @@
         </div>
     </form>
 
-
     <!--Code from:https://www.tutorialstonight.com/tic-tac-toe-javascript-->
-
-    <div id="board">
+    <div id="main-board">
         <div class="board-row">
-            <div class="board-cell"></div>
-            <div class="board-cell"></div>
-            <div class="board-cell"></div>
+            <div class="game-board"></div>
+            <div class="game-board"></div>
+            <div class="game-board"></div>
         </div>
 
         <div class="board-row">
-            <div class="board-cell"></div>
-            <div class="board-cell"></div>
-            <div class="board-cell"></div>
+            <div class="game-board"></div>
+            <div class="game-board"></div>
+            <div class="game-board"></div>
         </div>
 
         <div class="board-row">
-            <div class="board-cell"></div>
-            <div class="board-cell"></div>
-            <div class="board-cell"></div>
+            <div class="game-board"></div>
+            <div class="game-board"></div>
+            <div class="game-board"></div>
         </div>
         <div class="result"></div>
     </div>
@@ -86,7 +82,6 @@
     <div class="turn">Player 1</div>
 
     <!--Pop-up after winning 3,5,7 times-->
-
     <div id="congratulations">
         <label id="msg-congratulations"></label>
         <button class="ok-button" id="finish-game">OK</button>
@@ -120,20 +115,24 @@
 
     <!--Code from https://www.w3schools.com/css/css3_flexbox_responsive.asp-->
     <!--Pop-up Instructions-->
-
     <div class="popup flex-container" id="hiderule">
         <h2 class="instructions rule">
             Instructions:
         </h2>
         <div class="flex-item-left">1. Players must select their mark before the game starts (either X or O) and must
-            play the entire game using the same mark.</div>
-        <div class="flex-item-right">2. Players must take turns, making only one mark with each turn.</div>
+            play the entire game using the same mark.
+        </div>
+        <div class="flex-item-right">2. Players must take turns, making only one mark with each turn.
+        </div>
         <div class="flex-item-left">3. Marks can only be placed in empty squares, and once it is placed, it is
-            permanent.</div>
+            permanent.
+        </div>
         <div class="flex-item-right">4. The winner is the first player to get three of their marks in a straight line
-            (the line can be positioned diagonally, vertically, or horizontally).</div>
+            (the line can be positioned diagonally, vertically, or horizontally).
+        </div>
         <div class="flex-item-left">5. The game is over when all nine squares are filled with marks, even if none of the
-            players have a straight line of three marks.</div>
+            players have a straight line of three marks.
+        </div>
         <div class="flex-item-right">6. If neither player has a straight line of three marks, it is considered a tie.
         </div>
         <img src="assets/images/think.jpg" class="thinking-img" alt="Two people thinking!">
@@ -143,16 +142,13 @@
 
     <!--Footer-->
     <footer>
-
         <div class="copyright">
             <p> &#169; Copyright 2023 - For Educational Purposes Only</p>
         </div>
-
     </footer>
 
     <!--JS Script-->
     <script src="assets/js/script.js"></script>
-
 </body>
 
 </html>

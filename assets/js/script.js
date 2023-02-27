@@ -1,10 +1,7 @@
-// Code from: https://www.tutorialstonight.com/tic-tac-toe-javascript //
-
 // Selecting all elements //
-
 const player1 = document.getElementById('player1');
 const player2 = document.getElementById('player2');
-const boardCell = document.querySelectorAll('.board-cell');
+const boardCell = document.querySelectorAll('.game-board');
 const turn = document.querySelector('.turn');
 const scorecount1 = document.getElementById('scorecount1');
 const scorecount2 = document.getElementById('scorecount2');
@@ -16,7 +13,6 @@ let evaluationAndRuleButtons = document.getElementsByClassName("open-feedback-fo
 let closeEvaluationAndRule = document.getElementsByClassName("close-feedback-form");
 const msgCongratulations = document.getElementById("msg-congratulations");
 const disablebtn = document.getElementById("disable-btn");
-
 
 let i = "";
 let selectedLevel = "";
@@ -33,37 +29,34 @@ var board = [
 ];
 
 // Event listener for OK button on pop up //
-if ( window.location.pathname === "/game.html") {
-btnFinishGame.addEventListener("click", function () {
-    document.getElementById("congratulations").style.display = "none";
-    closePopupGame();
-    newGame();
-});
+if (window.location.pathname.slice(-9) === "game.html") {
+    btnFinishGame.addEventListener("click", function () {
+        document.getElementById("congratulations").style.display = "none";
+        newGame();
+    });
 }
 
+// Code for https://github.com/josswe26/rpsls/blob/main/assets/js/script.js //
 // Event listener to buttons opening the popups //
-
 for (let button of evaluationAndRuleButtons) {
+    console.log(evaluationAndRuleButtons)
     button.addEventListener("click", function () {
         let buttonSelected = this.getAttribute("id");
         openPopup(buttonSelected);
     });
 }
 
-
+// Code for https://github.com/josswe26/rpsls/blob/main/assets/js/script.js //
 // Event listener to close buttons on the popups //
-
 for (let button of closeEvaluationAndRule) {
+    console.log(closeEvaluationAndRule)
     button.addEventListener("click", function () {
         let buttonSelected = this.getAttribute("id");
         closePopup(buttonSelected);
     });
 }
 
-//Popups functions
-/**
- * Open the pop up when pressing the respective button
- */
+// Popups functions: Open the pop up when pressing the respective button //
 function openPopup(button) {
     if (button === "open-evaluation-form") {
         document.getElementById("main-feedback-form").style.display = "block";
@@ -72,9 +65,7 @@ function openPopup(button) {
     }
 }
 
-/**
- * Close the pop up if close button is pressed
- */
+// Close the pop up if close button is pressed //
 function closePopup(button) {
     if (button === "close-feedback-form") {
         document.getElementById("main-feedback-form").style.display = "none";
@@ -83,18 +74,16 @@ function closePopup(button) {
     }
 }
 
-
 //Pop up message on Game board //
-
-function openPopupGame() { if ( window.location.pathname === "/game.html") {
-    document.getElementById("pop-up").style.display = "block";
-}
+function openPopupGame() {
+    if (window.location.pathname.slice(-9) === "game.html") {
+        document.getElementById("pop-up").style.display = "block";
+    }
 }
 
 window.onload = function () {
     openPopupGame();
 };
-
 
 function closePopupGame(options) {
     for (const radioButton of radioButtons) {
@@ -134,29 +123,27 @@ function closePopupGame(options) {
 }
 
 // Start the game //
+function startGame() {
+    if (firstgame === true) {
+        boardCell.forEach((cell, index) => {
+            resetBoard();
+            cell.addEventListener("click", handleClick.bind(null, cell, index));
+        });
+    }
 
-function startGame() { 
-    if(firstgame === true) {
-    boardCell.forEach((cell, index) => {
-        resetBoard();
-        cell.addEventListener("click", handleClick.bind(null, cell, index));
-    });
-}
-
-firstgame = false;
+    firstgame = false;
 }
 
 // Reset the board //
-
 function resetBoard() {
     boardCell.forEach((cell) => {
         cell.innerHTML = "";
     });
-    document.getElementById('board').removeAttribute("style", "pointer-events: none;");
+    document.getElementById('main-board').removeAttribute("style", "pointer-events: none;");
 }
 
+// Code from: https://www.tutorialstonight.com/tic-tac-toe-javascript //
 // Click event //
-
 function handleClick(cell, index) {
     const cellValue = cell.innerHTML;
     if (cellValue === '') {
@@ -174,8 +161,8 @@ function handleClick(cell, index) {
     checkWinner();
 }
 
+// Code from: https://www.tutorialstonight.com/tic-tac-toe-javascript //
 // Check for the Winner //
-
 function checkWinner() {
     for (let i = 0; i < 3; i++) {
         if (board[i][0] === board[i][1] && board[i][0] === board[i][2] && board[i][0] !== '') {
@@ -199,32 +186,29 @@ function checkWinner() {
     }
 
     // Check for draw //
-
     var count = 0;
-
-    for (i in boardCell) { 
+    for (i in boardCell) {
         if (i != null || i != "") {
-        if (boardCell[i].innerHTML) {
-            count++;
+            if (boardCell[i].innerHTML) {
+                count++;
+            }
+            if (count == 9) {
+                showResult('Draw');
+                return;
+            }
         }
-        if (count == 9) {
-            showResult('Draw');
-            return;
-        }
-    }
     }
 }
 
 // Show the Results //
-
 function showResult(symbol) {
     if (symbol === Player1) {
         result.innerHTML = 'Player 1 Win!';
-        document.getElementById("board").setAttribute("style", "pointer-events: none;");
+        document.getElementById("main-board").setAttribute("style", "pointer-events: none;");
         countScore('Player1');
     } else if (symbol === Player2) {
         result.innerHTML = 'Player 2 Win!';
-        document.getElementById("board").setAttribute("style", "pointer-events: none;");
+        document.getElementById("main-board").setAttribute("style", "pointer-events: none;");
         countScore('Player2');
     } else {
         result.innerHTML = 'Draw!';
@@ -234,7 +218,6 @@ function showResult(symbol) {
 }
 
 // Count Score for each player and Show pop up after winning 3,5,7 times//
-
 function countScore(scorecount) {
     if (scorecount === 'Player1') {
         count1 = count1 + 1;
@@ -259,7 +242,6 @@ function countScore(scorecount) {
 
 
 // Restart the board //
-
 function newBoard() {
     result.style.display = 'none';
     turn.innerHTML = 'Player 1';
@@ -272,7 +254,6 @@ function newBoard() {
 }
 
 // Start a new game and open pop up with options and deselect previous options//
-
 function newGame() {
     count1 = 0;
     count2 = 0;
