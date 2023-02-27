@@ -243,7 +243,8 @@ img {
 .choose-player {
     background: red;
     color: whitesmoke;
-    text-align: center;
+    text-align: initial;
+    padding: 5%;
     font-weight: bold;
 }
 

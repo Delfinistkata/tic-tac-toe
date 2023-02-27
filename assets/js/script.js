@@ -50,6 +50,7 @@ for (let button of evaluationAndRuleButtons) {
     });
 }
 
+
 // Event listener to close buttons on the popups //
 
 for (let button of closeEvaluationAndRule) {
@@ -85,8 +86,9 @@ function closePopup(button) {
 
 //Pop up message on Game board //
 
-function openPopupGame() {
+function openPopupGame() { if ( window.location.pathname === "/game.html") {
     document.getElementById("pop-up").style.display = "block";
+}
 }
 
 window.onload = function () {
@@ -199,7 +201,9 @@ function checkWinner() {
     // Check for draw //
 
     var count = 0;
-    for (i in boardCell) {
+
+    for (i in boardCell) { 
+        if (i != null || i != "") {
         if (boardCell[i].innerHTML) {
             count++;
         }
@@ -207,6 +211,7 @@ function checkWinner() {
             showResult('Draw');
             return;
         }
+    }
     }
 }
 
