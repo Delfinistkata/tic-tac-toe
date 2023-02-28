@@ -39,7 +39,6 @@ if (window.location.pathname.slice(-9) === "game.html") {
 // Code for https://github.com/josswe26/rpsls/blob/main/assets/js/script.js //
 // Event listener to buttons opening the popups //
 for (let button of evaluationAndRuleButtons) {
-    console.log(evaluationAndRuleButtons)
     button.addEventListener("click", function () {
         let buttonSelected = this.getAttribute("id");
         openPopup(buttonSelected);
@@ -49,7 +48,6 @@ for (let button of evaluationAndRuleButtons) {
 // Code for https://github.com/josswe26/rpsls/blob/main/assets/js/script.js //
 // Event listener to close buttons on the popups //
 for (let button of closeEvaluationAndRule) {
-    console.log(closeEvaluationAndRule)
     button.addEventListener("click", function () {
         let buttonSelected = this.getAttribute("id");
         closePopup(buttonSelected);

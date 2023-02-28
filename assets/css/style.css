@@ -368,10 +368,26 @@ footer {
 
 /* Media Queries */
 
+/* Extra small devices (mobile phones 320px and up) */
+@media only screen and (min-width: 320px) {
+    .main-button {
+        box-shadow: 2px 2px;
+        text-shadow: 3px 3px 3px #00000069;
+        color: #000000;
+    }
+
+}
+
 /* Small devices (mobile phones 550px and up) */
 @media only screen and (min-width: 550px) {
     #pop-up {
         top: 50%;
+    }
+
+    .main-button {
+        box-shadow: 2px 2px;
+        text-shadow: 3px 3px 3px #00000069;
+        color: #000000;
     }
 }
 
@@ -380,11 +396,23 @@ footer {
     #pop-up {
         top: 60%;
     }
+
+    .main-button {
+        box-shadow: 2px 2px;
+        text-shadow: 3px 3px 3px #00000069;
+        color: #000000;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1205px and up) */
 @media only screen and (min-width: 1205px) {
     #pop-up {
         top: 70%;
+    }
+
+    .main-button {
+        box-shadow: 2px 2px;
+        text-shadow: 3px 3px 3px #00000069;
+        color: #000000;
     }
 }
