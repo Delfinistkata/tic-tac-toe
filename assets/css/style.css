@@ -374,8 +374,20 @@ footer {
         box-shadow: 2px 2px;
         text-shadow: 3px 3px 3px #00000069;
         color: #000000;
+        font-weight: bold;
     }
 
+    .close-rules {
+        background-color: red;
+        box-shadow: 1px 1px white;
+        color: #000000;
+    }
+
+    .feedback-area button {
+        background-color: red;
+        box-shadow: 1px 1px white;
+        color: #000000;
+    }
 }
 
 /* Small devices (mobile phones 550px and up) */
@@ -387,6 +399,19 @@ footer {
     .main-button {
         box-shadow: 2px 2px;
         text-shadow: 3px 3px 3px #00000069;
+        color: #000000;
+        font-weight: bold;
+    }
+
+    .close-rules {
+        background-color: red;
+        box-shadow: 1px 1px white;
+        color: #000000;
+    }
+
+    .feedback-area button {
+        background-color: red;
+        box-shadow: 1px 1px white;
         color: #000000;
     }
 }
@@ -401,7 +426,20 @@ footer {
         box-shadow: 2px 2px;
         text-shadow: 3px 3px 3px #00000069;
         color: #000000;
+        font-weight: bold;
     }
+
+    .close-rules {
+        background-color: red;
+        box-shadow: 1px 1px white;
+        color: #000000;
+    }
+
+    .feedback-area button {
+        background-color: red;
+        box-shadow: 1px 1px white;
+        color: #000000;
+    } 
 }
 
 /* Extra large devices (large laptops and desktops, 1205px and up) */
@@ -414,5 +452,6 @@ footer {
         box-shadow: 2px 2px;
         text-shadow: 3px 3px 3px #00000069;
         color: #000000;
+        font-weight: bold;
     }
 }
