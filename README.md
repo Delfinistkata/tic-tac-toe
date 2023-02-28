@@ -1,17 +1,26 @@
 <br>
 <br>
 
-# **TIC-TAC-TOE**
+# **TIC-TAC-TOE** 
 
 <br>
 
-# Contents
+<p> Welcome to Tic-tac-toe, also known as Naughts and Crosses, is one of the most widely known games. 
+    Found everywhere from the temples of ancient Egypt to the medieval cathedrals of England, tic-tac-toe has entertained people for centuries. 
+    While tic-tac-toe is now considered to be a child's game, it was not always the case. 
+    In the past, the game was linked to pagan rituals dedicated to the magic properties of the nine-square grid. 
+    The grid was known as the Magic Square because the numbers 1-9 could be arranged so that their sum is the same horizontally, diagonally or vertically. 
 
+<br>
+
+# Table of Contents
 
  ## [User Experience UX](<#user-experience-ux-1>)
-   1. ### [Wireframes](<#wireframes-1>)
-   2. ### [Site Structure](<#site-structure-1>)
-   3. ### [Design Choices](<#design-choices-1>)
+   1. ### [Project Goals](<#project-goals-1>)
+   2. ### [User Stories](<#user-stories-1>) 
+   3. ### [Wireframes](<#wireframes-1>)
+   4. ### [Site Structure](<#site-structure-1>)
+   5. ### [Design Choices](<#design-choices-1>)
    * #### [Typography](<#typography>)
    * #### [Colour Scheme](<#colour-scheme>)
  ## [Features](<#features-1>)
@@ -48,11 +57,52 @@
 
 <br>
 
+## Project Goals
+
+* The website provides a structure easy to understand and navigate.
+
+* Contains colors and interactivity to engage the player in the game play.
+
+* Responsive design to make the game accessible on different devices.
+
+* Incorporates a rules section that is easily accessible to the player.
+
+* A feedback section is provided to get comments from the player in order to further develop the website.
+
+<br>
+
+**[Back to top](<#TIC-TAC-TOE>)**
+
+<br>
+
+## User Stories
+
+* As a player, I want the game's website to be easy to navigate.
+
+* As a player, I want the game to be interesting and engaging.
+
+* As a player, I want to have easy access to the game rules.
+
+* As a player, I want the game controls to be easy to access during the game.
+
+* As a player, I want to receive overall feedback during and after the game.
+
+* As a player, I want to be able to play the game on different devices.
+
+<br>
+
+**[Back to top](<#TIC-TAC-TOE>)**
+
+<br>
+
  ## Wireframes
  
   The wireframes for the website were produced in Balsamiq. There are frames for a full width display and mobile devices. The final site varies from the wireframes due to developments that occured during the creation process.
 
 <br>
+
+### Desktop Devices
+
 <br>
 
 * Home Page:
@@ -87,9 +137,12 @@
 <br>
 <br>
 
-### Mobile Devices:
+**[Back to top](<#TIC-TAC-TOE>)**
 
 <br>
+
+### Mobile Devices:
+
 <br>
 
 * Home Page:
@@ -124,7 +177,7 @@
 <br>
 <br>
 
-**[Back to top](<#contents>)**
+**[Back to top](<#TIC-TAC-TOE>)**
 
 <br>
 <br>
@@ -133,9 +186,9 @@
 
 <br>
 
-<p> The game has three pages. The home page is the default loading page, rules and game pages are all accessible primarily from the buttons on the default loading page. </p>
+<p> The website has 2 pages. The home page is the default loading page, and the game page is accessible primarily from the buttons on the default loading page. </p>
 
-**[Back to top](<#contents>)**
+**[Back to top](<#TIC-TAC-TOE>)**
 
 <br>
 <br>
@@ -154,15 +207,17 @@
  ## Colour Scheme
 
   <p> The colour scheme eventually chosen is one based on black, whitesmoke, red.
-      The black colour contrasts with the images on the home page and the rules page and it is an easy color to read. Red colour was used to catch the user's eye and to draw their attention to the heading of the game. 
+      The black colour contrasts with the images on the home page and the game page and it is an easy color to read. Red colour was used to catch the user's eye and to draw their attention to the heading of the game. 
   </p>
 
-**[Back to top](<#contents>)**
+  <br>
+
+  **[Back to top](<#TIC-TAC-TOE>)**
 
   <br>
   <br>
 
-   Features
+# Features
 
 <br>
 
@@ -171,7 +226,7 @@
 
 <br>
 
-**[Back to top](<#contents>)**
+**[Back to top](<#TIC-TAC-TOE>)**
 
 <br>
 
@@ -179,7 +234,7 @@
 
 * Heading:
 
-   - Featured on all three pages, it is  full responsive heading and is identical in each page to allow for easy navigation.
+   - Featured on both pages, it is  full responsive heading and is identical in each page to allow for easy navigation.
 
 <br>
 
