@@ -232,7 +232,7 @@
 
 ## Existing Features:
 
-* Heading:
+* Header:
 
    - Featured on both pages, it is  full responsive heading and is identical in each page to allow for easy navigation.
 
@@ -244,11 +244,44 @@
 
 * Rules Button:
 
-   - The rules button navigates the user to the instructions of the game
+   - The rules button navigates the user to the instructions of the game.
+
+   - The user will have access to this button on the game page.
 
 <br>
 
-![rulesbtn](https://res.cloudinary.com/doyc0uqcs/image/upload/v1676818384/Project%202%20Tic%20Tac%20Toe/rulesbtn1_srisns.jpg) 
+![rulesbtn](https://res.cloudinary.com/doyc0uqcs/image/upload/v1677687437/Project%202%20Tic%20Tac%20Toe/rules1_p13yjz.jpg) 
+
+<br>
+
+* Instructions:
+
+   - The pop up comes up after the user have clicked on the rules button.
+
+   - The instructions explain to the user how to play the game and the rules behind it.
+
+   - This section is valuable to the user as they will know how to play the game correctly.
+
+<br>
+
+![instructions](https://res.cloudinary.com/doyc0uqcs/image/upload/v1677687825/Project%202%20Tic%20Tac%20Toe/popuprules1_mc2gk8.jpg) 
+
+<br>
+<br>
+
+![thinkpic](https://res.cloudinary.com/doyc0uqcs/image/upload/v1677688170/Project%202%20Tic%20Tac%20Toe/thinkingpic_rf3u0n.jpg)
+
+<br>
+
+* Close Button:
+
+   - There is a close button on the pop up for the instructions.
+
+   - When the user wants to exit the pop up, they can click on the close button.
+
+<br>
+
+![closepopuprules](https://res.cloudinary.com/doyc0uqcs/image/upload/v1677688500/Project%202%20Tic%20Tac%20Toe/closebtnrules_savip8.jpg) 
 
 <br>
 
@@ -258,13 +291,57 @@
 
 <br>
 
-![newgamebtn](https://res.cloudinary.com/doyc0uqcs/image/upload/v1676820264/Project%202%20Tic%20Tac%20Toe/newgame1_g7n9wt.jpg) 
+![newgamebtn](https://res.cloudinary.com/doyc0uqcs/image/upload/v1677688963/Project%202%20Tic%20Tac%20Toe/newgamebtn_scxfwi.jpg) 
+
+<br>
+
+* Feedback Button:
+
+   - The user will have the opportunity to leave a feedback about the game by clicking on the button. 
+
+<br>
+
+![feedbackbtn](https://res.cloudinary.com/doyc0uqcs/image/upload/v1677689513/Project%202%20Tic%20Tac%20Toe/feedbackbtn_twrm6m.png) 
+
+<br>
+
+* Feedback Form:
+
+   - The user will have the opportunity to leave a feedback about the game on the pop up form. 
+
+   - The user will have to fill in all the required fields before submitting the form.
+
+   - The user will have to write an email including '@' to be able to submit their feedback.
+
+<br>
+
+![feedbackform](https://res.cloudinary.com/doyc0uqcs/image/upload/v1677690045/Project%202%20Tic%20Tac%20Toe/feedbackform_cznto0.png) 
+
+<br>
+
+* Feedback Submit Button:
+
+   - The user will have the opportunity to send their feedback by clicking on the button. 
+
+<br>
+
+![feedbackformbtn](https://res.cloudinary.com/doyc0uqcs/image/upload/v1677690375/Project%202%20Tic%20Tac%20Toe/submitbtn_q5wk2m.png) 
+
+<br>
+
+* Feedback Close Button:
+
+   - The user will have the opportunity to close the feedback pop up by clicking on the button. 
+
+<br>
+
+![feedbackclosebtn](https://res.cloudinary.com/doyc0uqcs/image/upload/v1677690452/Project%202%20Tic%20Tac%20Toe/closebtnfbform_oczzjj.png) 
 
 <br>
 
 * Picture of the Game:
 
-   - The picture under the game buttons shows how the game looks like.
+   - The picture under all buttons on the home page shows how the game board looks like.
 
 <br>
 
@@ -274,55 +351,12 @@
 
 * Footer:
 
-- The footer adds style to the game.
+   - The footer adds style to both pages.
 
 <br>
 
-![footer](https://res.cloudinary.com/doyc0uqcs/image/upload/v1676822316/Project%202%20Tic%20Tac%20Toe/footer1_c6ei7c.jpg)
+![footer](https://res.cloudinary.com/doyc0uqcs/image/upload/v1677690622/Project%202%20Tic%20Tac%20Toe/footer1_jcelgs.png)
 
-<br>
-
-* Instructions Page:
-
-   - The instructions page explains to the user how to play the game and the rules behing it.
-
-   - This section is valuable to the user as they will know how to play the game correctly.
-
-<br>
-
-![instructions](https://res.cloudinary.com/doyc0uqcs/image/upload/v1676823470/Project%202%20Tic%20Tac%20Toe/instructions_jba95c.jpg)
-
-<br>
-<br>
-
-![thinkpic](https://res.cloudinary.com/doyc0uqcs/image/upload/v1676823676/Project%202%20Tic%20Tac%20Toe/thinkpic_qn2q1a.jpg)
-
-
-<br>
-<br>
-
-* Home Button:
-
-   - The user will get a thank you response after submitting their questions about joining our club.
-   
-   - The user will have the opportunity to go back to the home page after clicking on the button provided on the thank you page.
-
-<br>
-
-![homebtn](https://res.cloudinary.com/doyc0uqcs/image/upload/v1676824401/Project%202%20Tic%20Tac%20Toe/homebtn_ulynga.jpg)
-
-<br>
-<br>
-
-* Choose Player Button:
-
-   - The user will have the opportunity to choose to play with X or O.
-
-<br>
-
-![popup](https://res.cloudinary.com/doyc0uqcs/image/upload/v1676824909/Project%202%20Tic%20Tac%20Toe/popupbpx_qodq2g.jpg)
-
-<br>
 <br>
 
 * Player's Board:
@@ -334,19 +368,41 @@
 ![playersboard](https://res.cloudinary.com/doyc0uqcs/image/upload/v1676825443/Project%202%20Tic%20Tac%20Toe/playersboard_vtcfnd.jpg)
 
 <br>
+
+* Levels of Difficulty:
+
+   - The user will have the opportunity to choose the level of difficulty in the game. 
+
+   - The user will have 3 options: easy, medium and hard.
+
+   - Te user will have to choose if they wantt to play with 'X' or 'O'.
+
+   - The user won't be able to start the game before choosing the level of difficulty.
+
 <br>
 
-* Game Board:
+![levels](https://res.cloudinary.com/doyc0uqcs/image/upload/v1677690949/Project%202%20Tic%20Tac%20Toe/levels_gupiik.png)
 
-   - The user will have the opportunity to see the game board after choosing what they want to play with.
+<br>
+<br>
 
-   - After choosing X or O, Player 1 can begin playing by clicking in the box on the game board. 
+![chooselevel](https://res.cloudinary.com/doyc0uqcs/image/upload/v1677691384/Project%202%20Tic%20Tac%20Toe/chooselevel_gxngwp.png)
 
 <br>
 
-![gameboard](https://res.cloudinary.com/doyc0uqcs/image/upload/v1676825552/Project%202%20Tic%20Tac%20Toe/maingameboard_hsqb4t.jpg)
+* Player's turn:
+
+   - The user will be able to see and keep track on whose turn it is during the game.
 
 <br>
+
+![playersturn](https://res.cloudinary.com/doyc0uqcs/image/upload/v1676827781/Project%202%20Tic%20Tac%20Toe/playersturn_jube7k.jpg)
+
+<br>
+<br>
+
+![playersturn1](https://res.cloudinary.com/doyc0uqcs/image/upload/v1676828397/Project%202%20Tic%20Tac%20Toe/playersturn1_r0zlli.jpg)
+
 <br>
 
 * Score Board:
@@ -358,24 +414,81 @@
 ![scoreboard](https://res.cloudinary.com/doyc0uqcs/image/upload/v1676826482/Project%202%20Tic%20Tac%20Toe/scoreboard_vfkrya.jpg)
 
 <br>
+
+* Game Board:
+
+   - The user will have an access to the game board after selecting the level of difficulty and selecting 'X' or 'O'.
+
+   - The user will begin the game by clicking on the boxes on the game board.
+   
+   - Player 1 always starts first in the game.
+
+<br>
+
+![gameboard](https://res.cloudinary.com/doyc0uqcs/image/upload/v1676825552/Project%202%20Tic%20Tac%20Toe/maingameboard_hsqb4t.jpg)
+
+<br>
+
+* Level of Difficulty Pop Up:
+
+   - The user will be able to see the score after winning 3, 5, or 7 times depending on the level of difficulty that they choose.
+
+   - The user will have to press on the button 'OK', to begin a new game.
+
+   - The user will not be able to use the reset button after the pop up is on the screen, they would have to click on the 'OK' 
+     button to continue.
+
+<br>
+
+![levelspopup3](https://res.cloudinary.com/doyc0uqcs/image/upload/v1677698753/Project%202%20Tic%20Tac%20Toe/winningpopupgb_y4mguv.png)
+
+<br>
+<br>
+
+![levelspopup5](https://res.cloudinary.com/doyc0uqcs/image/upload/v1677699037/Project%202%20Tic%20Tac%20Toe/popup5_o3v7s6.png)
+
+<br>
+<br>
+
+![levelspopup7](https://res.cloudinary.com/doyc0uqcs/image/upload/v1677699239/Project%202%20Tic%20Tac%20Toe/popup7_djyled.png)
+
+<br>
+
+* Announcing the winner:
+
+   - The user will be able to see who won the game after each game depending on the level of difficulty.
+
+<br>
+
+![winner](https://res.cloudinary.com/doyc0uqcs/image/upload/v1677693350/Project%202%20Tic%20Tac%20Toe/winnerpopup_sne6in.png)
+
+<br>
+
+* Reset Button:
+
+   - The user will be able to reset the game board after each game depending on the level of difficulty that they choose for the particular game.
+
+<br>
+
+![resetbtn](https://res.cloudinary.com/doyc0uqcs/image/upload/v1677692630/Project%202%20Tic%20Tac%20Toe/resetbtngb_b54g5k.png)
+
+<br>
+
+* Home Button:
+
+   - The user will be able to get back to the home page by clicking on the home button.
+
+<br>
+
+![homebtn](https://res.cloudinary.com/doyc0uqcs/image/upload/v1677692431/Project%202%20Tic%20Tac%20Toe/homebtngb_ucyfmh.png)
+
+<br>
 <br>
 
 
-* Player's turn:
 
-   - The user will be able to see and keep track on whose turn it is during the game.
 
-<br>
 
-![playersturn](https://res.cloudinary.com/doyc0uqcs/image/upload/v1676827781/Project%202%20Tic%20Tac%20Toe/playersturn_jube7k.jpg)
-
-<hr>
-<br>
-
-![playersturn1](https://res.cloudinary.com/doyc0uqcs/image/upload/v1676828397/Project%202%20Tic%20Tac%20Toe/playersturn1_r0zlli.jpg)
-
-<br>
-<br>
 
 **[Back to top](<#contents>)**
 

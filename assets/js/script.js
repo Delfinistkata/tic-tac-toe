@@ -1,4 +1,4 @@
-// Selecting all elements //
+// Selecting all elements
 const player1 = document.getElementById('player1');
 const player2 = document.getElementById('player2');
 const boardCell = document.querySelectorAll('.game-board');
@@ -63,7 +63,10 @@ function openPopup(button) {
     }
 }
 
-// Close the pop up if close button is pressed //
+
+/**
+ * Close the pop up if close button is pressed
+ */
 function closePopup(button) {
     if (button === "close-feedback-form") {
         document.getElementById("main-feedback-form").style.display = "none";
