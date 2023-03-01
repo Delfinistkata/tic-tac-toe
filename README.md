@@ -542,17 +542,129 @@
 
 <br>
 
-* [Balsamiq](https://balsamiq.com/wireframes/) - used to create the wireframes.
-* [HTML5](https://html.spec.whatwg.org/) - provides the content and structure for the website.
-* [CSS](https://www.w3.org/Style/CSS/Overview.en.html) - provides the styling.
-* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - provides the function.
-* [Gitpod](https://www.gitpod.io/#get-started) - used to deploy the website.
-* [Github](https://github.com/) - used to host and edit the website.
+## Languages Used:
+<br>
 
+* [HTML5](https://en.wikipedia.org/wiki/HTML5)
+    - provides the content and structure for the website.
+
+<br>
+
+* [CSS3](https://en.wikipedia.org/wiki/CSS)
+    - provides the styling.
+
+<br>
+
+* [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+    - provides the function.
+
+<br>
+
+## Frameworks, Libraries and Programs Used:
+
+<br>
+
+* [Google Fonts](https://fonts.google.com/)
+    - Google Fonts was used to import the font Tajawal into the style.css file. The font was used throughout the site.
+
+<br>
+
+* [GitPod](https://gitpod.io/)
+     - GitPod was used for writing code, committing, and then pushing to GitHub.
+
+<br>
+
+* [GitHub](https://github.com/)
+     - GitHub was used to store the project after pushing.
+
+<br>
+
+* [Balsamiq](https://balsamiq.com/)
+     - Balsamiq was used to create the wireframes during the design phase of the project.
+
+<br>
+
+* [Am I Responsive?](http://ami.responsivedesign.is/#)
+    - Am I Responsive was used in order to see responsive design throughout the process and to generate mockup imagery to be used.
+
+<br>
+
+* [Responsive Design Checker](https://www.responsivedesignchecker.com/)
+    - Responsive Design Checker was used in the testing process to check responsiveness on various devices.
+
+<br>
+
+* [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
+    - Chrome DevTools was used during development process for code review and to test responsiveness.
+
+<br>
+
+* [W3C Markup Validator](https://validator.w3.org/)
+    - W3C Markup Validator was used to validate the HTML code.
+
+<br>
+
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+    - W3C CSS Validator was used to validate the CSS code.
+
+<br>
+
+* [JSHint](https://jshint.com/) 
+    - The JSHints JavaScript Code Quality Tool was used to validate the site's JavaScript code.
 
 <br>
 
 **[Back to top](<#contents>)**
 
 <br>
+<br>
+
+# Testing
+
+## Testing User Stories:
+
+<br>
+
+* As a player, I want the game's website to be easy to navigate.
+
+    - The website offers an intuitive structure for the player to find easily the information or section they are looking for.
+
+<br>
+
+* As a player, I want the game to be fun and engaging.
+
+    - A fun main image has been selected to represent the game in a fun way.
+
+    - The site's color design has been inspired on the main image in order to create a clear relation between each colour used. 
+    
+    - The game area display the game board in a clear and visible way for the player.
+
+    - The score for the current round is being tracked and displayed under the Player's turn.
+
+    - The game result after winning 3, 5, 7 times is presented as a pop up catching the players' attention.
+
+<br>
+
+* As a player, I want to have easy access to the game rules.
+
+    - A rules botton is being provided directly on the game page under home button.
+
+    - A rules botton is being provided directly on the home page above new game button.
+
+    - The rules open as a popup directly on the game page so the player does not need to leave the game at any time.
+
+<br>
+
+* As a player, I want to receive overall feedback during and after the game.
+
+    - Score for the current round is always available under player's turn on the game page.
+
+    - The result after winning 3, 5, 7 times is provided with a short explanation.
+
+<br>
+
+* As a player, I want to be able to play the game on different devices.
+
+    - Responsive design across all device sizes.
+
 <br>
