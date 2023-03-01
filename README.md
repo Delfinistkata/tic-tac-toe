@@ -483,28 +483,22 @@
 ![homebtn](https://res.cloudinary.com/doyc0uqcs/image/upload/v1677692431/Project%202%20Tic%20Tac%20Toe/homebtngb_ucyfmh.png)
 
 <br>
-<br>
-
-
-
-
-
 
 **[Back to top](<#contents>)**
 
 <br>
-<br>
 
 ## Features Left to Implement:
 
-* Multyplayer mode
+* Single player mode (ie. playing against the computer).
 
-* Grid 4x4 and 5x5
+* Choose Grid: 4x4 and 5x5.
+
+* 404 error page
 
 * Additional Pages:
 
-   - An additional page displaying the highest result.
-
+   - Page displaying the highest result.
 
 <br>
 
