@@ -349,6 +349,10 @@
 
 <br>
 
+**[Back to top](<#TIC-TAC-TOE>)**
+
+<br>
+
 * Footer:
 
    - The footer adds style to both pages.
@@ -359,6 +363,10 @@
 
 <br>
 
+**[Back to top](<#TIC-TAC-TOE>)**
+
+<br>
+
 * Player's Board:
 
    - The user will have the opportunity to see what they have choosen to play with in the game. 
@@ -366,6 +374,10 @@
 <br>
 
 ![playersboard](https://res.cloudinary.com/doyc0uqcs/image/upload/v1676825443/Project%202%20Tic%20Tac%20Toe/playersboard_vtcfnd.jpg)
+
+<br>
+
+**[Back to top](<#TIC-TAC-TOE>)**
 
 <br>
 
@@ -390,6 +402,10 @@
 
 <br>
 
+**[Back to top](<#TIC-TAC-TOE>)**
+
+<br>
+
 * Player's turn:
 
    - The user will be able to see and keep track on whose turn it is during the game.
@@ -405,6 +421,10 @@
 
 <br>
 
+**[Back to top](<#TIC-TAC-TOE>)**
+
+<br>
+
 * Score Board:
 
    - The user will be able to see and keep track of their score throughout the game.
@@ -412,6 +432,10 @@
 <br>
 
 ![scoreboard](https://res.cloudinary.com/doyc0uqcs/image/upload/v1676826482/Project%202%20Tic%20Tac%20Toe/scoreboard_vfkrya.jpg)
+
+<br>
+
+**[Back to top](<#TIC-TAC-TOE>)**
 
 <br>
 
@@ -426,6 +450,10 @@
 <br>
 
 ![gameboard](https://res.cloudinary.com/doyc0uqcs/image/upload/v1676825552/Project%202%20Tic%20Tac%20Toe/maingameboard_hsqb4t.jpg)
+
+<br>
+
+**[Back to top](<#TIC-TAC-TOE>)**
 
 <br>
 
@@ -464,6 +492,10 @@
 
 <br>
 
+**[Back to top](<#TIC-TAC-TOE>)**
+
+<br>
+
 * Reset Button:
 
    - The user will be able to reset the game board after each game depending on the level of difficulty that they choose for the particular game.
@@ -484,7 +516,7 @@
 
 <br>
 
-**[Back to top](<#contents>)**
+**[Back to top](<#TIC-TAC-TOE>)**
 
 <br>
 
@@ -499,6 +531,24 @@
 * Additional Pages:
 
    - Page displaying the highest result.
+
+<br>
+
+**[Back to top](<#TIC-TAC-TOE>)**
+
+<br>
+
+# Technologies Used
+
+<br>
+
+* [Balsamiq](https://balsamiq.com/wireframes/) - used to create the wireframes.
+* [HTML5](https://html.spec.whatwg.org/) - provides the content and structure for the website.
+* [CSS](https://www.w3.org/Style/CSS/Overview.en.html) - provides the styling.
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - provides the function.
+* [Gitpod](https://www.gitpod.io/#get-started) - used to deploy the website.
+* [Github](https://github.com/) - used to host and edit the website.
+
 
 <br>
 
