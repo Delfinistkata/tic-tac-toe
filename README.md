@@ -23,18 +23,39 @@
    5. ### [Design Choices](<#design-choices-1>)
    * #### [Typography](<#typography>)
    * #### [Colour Scheme](<#colour-scheme>)
+
  ## [Features](<#features-1>)
-   1. ### [Existing Features](<#existing-features-1>)
-   *  
-   * 
-   * 
-   * Footer
+   1. ### [Existing Features:](<#existing-features-1>)
+   *  #### Header
+   *  #### Rules Button
+   *  #### Instructions
+   *  #### Close Button
+   *  #### New Game Button
+   *  #### Feedback Button
+   *  #### Feedback Form
+   *  #### Feedback Submit Button
+   *  #### Feedback Close Button
+   *  #### Picture on Home Page
+   *  #### Footer
+   *  #### Player's Board
+   *  #### Levels of Difficulty
+   *  #### Player's Turn
+   *  #### Score Board
+   *  #### Game Board
+   *  #### Level of Difficulty Pop Up
+   *  #### Announcing the Winner
+   *  #### Reset Button
+   *  #### Home Button
+
    2. ### [Features left to Implement](<#features-left-to-implement-1>)
-   * Multyplayer mode
-   * Grid 4x4, 5x5
+   * #### Single player mode (ie. playing against the computer)
+   * #### Choose Grid: 4x4 and 5x5
+   * #### 404 error page
+   * #### Additional Pages:
+      * ##### Page displaying the highest result.
 
  ## [Technologies Used](<#technologies-used-1>)
- ## [Testing](<#testing-1>)
+   ### [Testing](<#testing-1>)
    1. ### [Code Validation](<#code-validation-1>)
    2. ### [Browser Compatibility](<#browser-compatibility-1>)
    3. ### [Responsiveness](<#responsiveness-test>)
@@ -614,7 +635,7 @@
 
 <br>
 
-**[Back to top](<#contents>)**
+**[Back to top](<#TIC-TAC-TOE>)**
 
 <br>
 <br>
@@ -668,3 +689,193 @@
     - Responsive design across all device sizes.
 
 <br>
+
+**[Back to top](<#TIC-TAC-TOE>)**
+
+<br>
+<br>
+
+## Code Validation
+The Tic-Tac-Toe game has been throughly tested. All the code has been run through the [W3C Markup Validator](https://validator.w3.org/) and [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) to validate all pages of the project in order to ensure there were no syntax errors. The [JSHints JavaScript Code Quality Tool](https://jshint.com/) was used to validate the site's JavaScript code. No errors were found after the last test. 
+
+<br>
+
+The HTML validator results for each page are below:
+
+<br>
+
+* Home Page
+
+![htmlvalidator1](https://res.cloudinary.com/doyc0uqcs/image/upload/v1677772467/Project%202%20Tic%20Tac%20Toe/htmlvalidator_yocboh.png)
+
+<br>
+<br>
+
+* Game Page
+
+![htmlvalidator2]()
+
+<br>
+<br>
+
+The CSS validator results are below:
+
+![cssvalidator2](https://res.cloudinary.com/doyc0uqcs/image/upload/v1677773811/Project%202%20Tic%20Tac%20Toe/cssvalidator_dt7s1s.png)
+
+<br>
+<br>
+
+The JsHint validator results are below:
+
+- JSHints found no errors on the site's JavaScript code.
+- JsHints found 2 warnings:
+
+![jshint](https://res.cloudinary.com/doyc0uqcs/image/upload/v1677774162/Project%202%20Tic%20Tac%20Toe/jshint_wjczgs.png)
+
+<br>
+<br>
+
+## Testing Tools:
+
+* [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
+
+    - Chrome DevTools was used during the development process to test, explore and modify HTML elements and CSS styles used in the project.
+
+* Responsiveness:
+
+   - [Am I Responsive?](http://ami.responsivedesign.is/#) was used to check responsiveness of the site pages across different devices.
+
+   - [Responsive Design Checker](https://www.responsivedesignchecker.com/) was used to check responsiveness of the site pages on different screen sizes.
+
+   - [Chrome DevTools](https://developer.chrome.com/docs/devtools/) was used to test responsiveness in different screen sizes during the development process.
+
+<br>
+<br>
+
+## Manual Testing
+
+<br>
+
+### Browser Compatibility:
+
+Browser | Outcome | Pass/Fail  
+--- | --- | ---
+Google Chrome | No issues found.| Pass
+Safari | No issues found. | Pass
+Mozilla Firefox | No issues found.| Pass
+Microsoft Edge | No issues found. | Pass
+
+<br>
+<br>
+
+### Device Compatibility:
+
+Device | Outcome | Pass/Fail
+--- | --- | ---
+IPhone SE | No issues found. | Pass
+Galaxy S8+ | No issues found. | Pass
+iPhone XR | No issues found. | Pass
+iPad | No issues found. | Pass
+iPad Pro | No issues found. | Pass
+Display <1200px | No issues found. | Pass
+Display >1200px | No issues found. | Pass
+
+<br>
+<br>
+
+### Common Elements Testing:
+
+<br>
+
+- Home Page:
+
+Feature | Outcome | Pass/Fail
+--- | --- | ---
+Rules Button | Changes colour when it is clicked, opens pop up. | Pass
+Rules' Close Button | Changes colour when clicked and closes popup when clicked. | Pass
+New Game Button | Changes colour when clicked and links to game page when button is clicked. | Pass
+Feedback Button | Changes colour when clicked and open feedback form popup when clicked. | Pass
+
+<br>
+<br>
+
+- Feedback Form Popup:
+
+Feature | Outcome | Pass/Fail
+--- | --- | ---
+Feedback Form | Require all fields in the right format before submitting. |  Pass
+Submit Button | Changes colour when clicked, submit form when cicked. |  Pass
+Form Close Button | Changes colour when clicked and close pop-up when clicked. | Pass
+
+<br>
+<br>
+
+- Game Page:
+
+Feature | Outcome | Pass/Fail
+--- | --- | ---
+Level of Difficulty Popup | Comes up when you open Game Page. |  Pass
+Player's Mode | Once X or O selected it shows up. |  Pass
+Player's Turn | Once each player selects a box, the player's turn changes. |  Pass
+Player's Score | Increases by 1 when player win each round. |  Pass
+Winner Announcement | A pop up comes up after winning 3, 5, 7 times for each player. |  Pass
+Game Feedback | Display the expected text depending on the round result. | Pass
+Reset Button | It resets the board after each round before reaching the stated level of difficulty. | Pass
+Home Button | Changes colour when clicked and opens Home Page. | Pass
+Rules Button |Changes colour when clicked and opens rules popup when clicked. | Pass
+Rules' Close Button | Changes colour when clicked and closes popup when clicked. | Pass
+
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Additional Testing
+
+ ## Lighthouse
+
+<br>
+
+  * Performance - How the page performs whilst loading.
+
+  * Accessibility - Is the site acccessible for all users and how can it be improved.
+
+  * Best Practices - Site conforms to industry best practices.
+
+  * SEO - Search engine optimisation. Is the site optimised for search engine result rankings.
+
+<br>
+
+### Home Page
+
+<br>
+
+![Home Page](https://res.cloudinary.com/doyc0uqcs/image/upload/v1677775121/Project%202%20Tic%20Tac%20Toe/index.htmlLH_d4r0it.png)
+
+<br>
+<br>
+
+### Game Page
+
+<br>
+
+![Game Page]()
+
+<br>
+<br>
+
+**[Back to top](<#TIC-TAC-TOE>)**
+
+<br>
+<br>
+
