@@ -36,8 +36,8 @@ if (window.location.pathname.slice(-9) === "game.html") {
     });
 }
 
-// Code for https://github.com/josswe26/rpsls/blob/main/assets/js/script.js //
-// Event listener to buttons opening the popups //
+// Code from https://github.com/josswe26/rpsls/blob/main/assets/js/script.js 
+// Event listener to buttons opening the popups 
 for (let button of evaluationAndRuleButtons) {
     button.addEventListener("click", function () {
         let buttonSelected = this.getAttribute("id");
@@ -45,8 +45,8 @@ for (let button of evaluationAndRuleButtons) {
     });
 }
 
-// Code for https://github.com/josswe26/rpsls/blob/main/assets/js/script.js //
-// Event listener to close buttons on the popups //
+// Code for https://github.com/josswe26/rpsls/blob/main/assets/js/script.js 
+// Event listener to close buttons on the popups 
 for (let button of closeEvaluationAndRule) {
     button.addEventListener("click", function () {
         let buttonSelected = this.getAttribute("id");
@@ -54,7 +54,9 @@ for (let button of closeEvaluationAndRule) {
     });
 }
 
-// Popups functions: Open the pop up when pressing the respective button //
+/** 
+ * Open the pop up when pressing the respective button
+ */
 function openPopup(button) {
     if (button === "open-evaluation-form") {
         document.getElementById("main-feedback-form").style.display = "block";
@@ -75,7 +77,9 @@ function closePopup(button) {
     }
 }
 
-//Pop up message on Game board //
+/**
+ * Pop up message on Game board 
+ */
 function openPopupGame() {
     if (window.location.pathname.slice(-9) === "game.html") {
         document.getElementById("pop-up").style.display = "block";
@@ -86,6 +90,9 @@ window.onload = function () {
     openPopupGame();
 };
 
+/**
+ * Pop up message on Game board showing the level of difficulty and choose player
+ */
 function closePopupGame(options) {
     for (const radioButton of radioButtons) {
         if (radioButton.checked) {
@@ -123,7 +130,9 @@ function closePopupGame(options) {
 
 }
 
-// Start the game //
+/**
+ * Start the game by clicking on the empty box
+ */
 function startGame() {
     if (firstgame === true) {
         boardCell.forEach((cell, index) => {
@@ -135,7 +144,9 @@ function startGame() {
     firstgame = false;
 }
 
-// Reset the board //
+/***
+ * Reset the board after winning each game before reaching the selected level of difficulty
+ */
 function resetBoard() {
     boardCell.forEach((cell) => {
         cell.innerHTML = "";
@@ -143,8 +154,10 @@ function resetBoard() {
     document.getElementById('main-board').removeAttribute("style", "pointer-events: none;");
 }
 
-// Code from: https://www.tutorialstonight.com/tic-tac-toe-javascript //
-// Click event //
+// Code from: https://www.tutorialstonight.com/tic-tac-toe-javascript 
+/**
+ * Clicking on each empty box, which changes the turn of the player 
+ */
 function handleClick(cell, index) {
     const cellValue = cell.innerHTML;
     if (cellValue === '') {
@@ -163,7 +176,9 @@ function handleClick(cell, index) {
 }
 
 // Code from: https://www.tutorialstonight.com/tic-tac-toe-javascript //
-// Check for the Winner //
+/**
+ * Checking for the Winner after each game and for draw results
+ */
 function checkWinner() {
     for (let i = 0; i < 3; i++) {
         if (board[i][0] === board[i][1] && board[i][0] === board[i][2] && board[i][0] !== '') {
@@ -186,7 +201,7 @@ function checkWinner() {
         return;
     }
 
-    // Check for draw //
+    // Check for draw 
     var count = 0;
     for (i in boardCell) {
         if (i != null || i != "") {
@@ -201,7 +216,9 @@ function checkWinner() {
     }
 }
 
-// Show the Results //
+/**
+ * Alert the player after winning each game before reaching the specidied level of difficulty
+ */
 function showResult(symbol) {
     if (symbol === Player1) {
         result.innerHTML = 'Player 1 Win!';
@@ -218,7 +235,9 @@ function showResult(symbol) {
     turn.innerHTML = '';
 }
 
-// Count Score for each player and Show pop up after winning 3,5,7 times//
+/**
+ * Count Score for each player after winning and Show pop up after winning 3,5,7 times
+ */
 function countScore(scorecount) {
     if (scorecount === 'Player1') {
         count1 = count1 + 1;
@@ -242,7 +261,9 @@ function countScore(scorecount) {
 }
 
 
-// Restart the board //
+/**
+ * Reset the board after winning each game before reaching the specified level of difficulty
+ */
 function newBoard() {
     result.style.display = 'none';
     turn.innerHTML = 'Player 1';
@@ -254,7 +275,9 @@ function newBoard() {
     resetBoard();
 }
 
-// Start a new game and open pop up with options and deselect previous options//
+/**
+ * Start a new game and open pop up with options for level of difficulty and choose player and deselect previous options, reset score
+ */
 function newGame() {
     count1 = 0;
     count2 = 0;

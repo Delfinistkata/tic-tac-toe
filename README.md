@@ -1,4 +1,4 @@
-<br>
+
 <br>
 
 # **TIC-TAC-TOE** 
@@ -11,6 +11,7 @@
     In the past, the game was linked to pagan rituals dedicated to the magic properties of the nine-square grid. 
     The grid was known as the Magic Square because the numbers 1-9 could be arranged so that their sum is the same horizontally, diagonally or vertically. 
 
+<br>
 <br>
 
 # Table of Contents
@@ -55,14 +56,18 @@
       * ##### Page displaying the highest result.
 
  ## [Technologies Used](<#technologies-used-1>)
+   ### [Languages Used](<#languages-used-1>)
+   ### [Frameworks, Libraries and Programs Used](<#frameworks-libraries-and-programs-used>)
    ### [Testing](<#testing-1>)
-   1. ### [Code Validation](<#code-validation-1>)
-   2. ### [Browser Compatibility](<#browser-compatibility-1>)
-   3. ### [Responsiveness](<#responsiveness-test>)
-   4. ### [Common Elements Test](<#common-elements-test-1>)
-   5. ### [Known Bugs](<#known-bugs-1>)
- ## [Additional Testing](<#additional-testing-1>)
-   * ### [Lighthouse](<#lighthouse-1>)
+   1. #### [User Stories](<#testing-user-stories>)
+   2. #### [Code Validation](<#code-validation-1>)
+   3. #### [Testing Tools](<#testing-tools-1>)
+   4. #### [Manual Testing](<#manual-testing-1>)
+   * ##### [Browser Compatibility](<#browser-compatibility-1>)
+   * ##### [Device Compatibility](<#device-compatibility-1>)
+   * ##### [Common Elements Testing](<#common-elements-testing-1>)
+   ### [Additional Testing](<#additional-testing-1>)
+   * #### [Lighthouse](<#lighthouse-1>)
  ## [Deployment](<#deployment-1>)
  ## [Credits](<#credits-1>)
    1. ### [Content](<#content-1>)
