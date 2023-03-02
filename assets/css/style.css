@@ -75,7 +75,7 @@ img {
 }
 
 /* https://github.com/josswe26/rpsls */
-/* Style pop-ups throught the website*/
+/* Style pop-ups */
 .popup {
     width: 250px;
     top: 25px;
@@ -162,8 +162,7 @@ img {
     background-color: #ffffff;
 }
 
-/*Styling Rules Page */
-
+/*Styling Rules Pop up */
 /* Styling Rules heading */
 .instructions {
     font-size: 2em;
@@ -181,7 +180,6 @@ img {
 }
 
 /* Code from https://www.w3schools.com/css/css3_flexbox_responsive.asp */
-
 /* Styling Instructions */
 #hiderule {
     display: none;
@@ -282,7 +280,6 @@ img {
 }
 
 /* Code from:https://www.tutorialstonight.com/tic-tac-toe-javascript */
-
 /* Styling game board */
 #board {
     display: contents;
@@ -367,7 +364,6 @@ footer {
 }
 
 /* Media Queries */
-
 /* Extra small devices (mobile phones 320px and up) */
 @media only screen and (min-width: 320px) {
     .main-button {

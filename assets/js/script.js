@@ -28,7 +28,7 @@ var board = [
     ['', '', '']
 ];
 
-// Event listener for OK button on pop up //
+// Event listener for OK button on pop up 
 if (window.location.pathname.slice(-9) === "game.html") {
     btnFinishGame.addEventListener("click", function () {
         document.getElementById("congratulations").style.display = "none";

@@ -733,13 +733,21 @@ The JsHint validator results are below:
 ![jshint](https://res.cloudinary.com/doyc0uqcs/image/upload/v1677774162/Project%202%20Tic%20Tac%20Toe/jshint_wjczgs.png)
 
 <br>
+
+**[Back to top](<#TIC-TAC-TOE>)**
+
+<br>
 <br>
 
 ## Testing Tools:
 
+<br>
+
 * [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
 
     - Chrome DevTools was used during the development process to test, explore and modify HTML elements and CSS styles used in the project.
+
+<br>
 
 * Responsiveness:
 
@@ -748,6 +756,10 @@ The JsHint validator results are below:
    - [Responsive Design Checker](https://www.responsivedesignchecker.com/) was used to check responsiveness of the site pages on different screen sizes.
 
    - [Chrome DevTools](https://developer.chrome.com/docs/devtools/) was used to test responsiveness in different screen sizes during the development process.
+
+<br>
+
+**[Back to top](<#TIC-TAC-TOE>)**
 
 <br>
 <br>
@@ -779,6 +791,10 @@ iPad | No issues found. | Pass
 iPad Pro | No issues found. | Pass
 Display <1200px | No issues found. | Pass
 Display >1200px | No issues found. | Pass
+
+<br>
+
+**[Back to top](<#TIC-TAC-TOE>)**
 
 <br>
 <br>
@@ -826,23 +842,15 @@ Rules Button |Changes colour when clicked and opens rules popup when clicked. | 
 Rules' Close Button | Changes colour when clicked and closes popup when clicked. | Pass
 
 <br>
+
+**[Back to top](<#TIC-TAC-TOE>)**
+
+<br>
 <br>
 
+## Additional Testing
 
-
-
-
-
-
-
-
-
-
-
-
-# Additional Testing
-
- ## Lighthouse
+### Lighthouse
 
 <br>
 
@@ -856,7 +864,7 @@ Rules' Close Button | Changes colour when clicked and closes popup when clicked.
 
 <br>
 
-### Home Page
+#### Home Page
 
 <br>
 
@@ -865,7 +873,7 @@ Rules' Close Button | Changes colour when clicked and closes popup when clicked.
 <br>
 <br>
 
-### Game Page
+#### Game Page
 
 <br>
 
@@ -879,3 +887,116 @@ Rules' Close Button | Changes colour when clicked and closes popup when clicked.
 <br>
 <br>
 
+# Deployment
+
+<br>
+
+* The site was deployed to GitHub pages. The steps to deploy are as follows:
+
+<br>
+
+1. In the GitHub repository, navigate to the Settings tab.
+2. Once in Settings, navigate to the Pages tab on the left hand side.
+3. Under Source, select the branch to master, then click save.
+4. Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+<br>
+<br>
+
+![Deployment](https://res.cloudinary.com/doyc0uqcs/image/upload/v1674736517/deployment_e7kb4p.png)
+
+<br>
+
+The live link can be found [here]()
+
+<br>
+
+**[Back to top](<#TIC-TAC-TOE>)**
+
+<br>
+<br>
+
+## To fork the repository on GitHub
+
+<br>
+
+* A copy of the GitHub Repository can be made by forking the GitHub account. This copy can be viewed and changes can be made to 
+  the copy without affecting the original repository. Take the following steps to fork the repository:
+
+1. Log in to GitHub and locate the repository.
+2. On the right hand side of the page inline with the repository name is a button called 'Fork', click on the button to create a 
+   copy of the original repository in your GitHub Account.
+
+<br>
+
+**[Back to top](<#TIC-TAC-TOE>)**
+
+<br>
+<br>
+
+## To create a local clone of this project
+
+* The method from cloning a project from GitHub is below:
+
+1. Under the repository’s name, click on the code tab.
+2. In the Clone with HTTPS section, click on the clipboard icon to copy the given URL.
+3. In your IDE of choice, open Git Bash.
+4. Change the current working directory to the location where you want the cloned directory to be made.
+5. Type git clone, and then paste the URL copied from GitHub.
+6. Press enter and the local clone will be created.
+
+<br>
+
+**[Back to top](<#TIC-TAC-TOE>)**
+
+<br>
+<br>
+
+# Credits
+
+<br>
+
+## Content
+
+<br>
+
+* [Google Fonts]("https://fonts.google.com/") : Used for font.
+* [W3School](https://www.w3schools.com/css/css3_flexbox_container.asp) : Used for flexbox.
+* [Gamescrafters](http://gamescrafters.berkeley.edu/games.php?game=tictactoe) : Used for instructions.
+* [Gamesver](https://www.gamesver.com/all-about-tic-tac-toe-purpose-rules-how-to-play-strategy/) : Used for rules.
+* [Tutorialstonight](https://www.tutorialstonight.com/tic-tac-toe-javascript) : Used idea for game board.
+* [Github](https://github.com/josswe26/rpsls/blob/main/index.html) : Used idea for pop up feedback form and rules.
+* [Logrocket](https://blog.logrocket.com/five-cool-css-header-styles-with-cross-browser-compatibility/) : Used idea for styling the heading.
+* [Stackoverflow](https://stackoverflow.com/) : Used on regular basis for inspiration and sometimes to be able to better understand the code being implemented.
+* [Coudinary](https://cloudinary.com/) : Used to store the screenshots in the Readme file.
+* [Readme.md](https://github.com/josswe26/rpsls/blob/main/README.md?plain=1) : Used for some ideas.
+* [Readme.md](https://github.com/kpetrauskas92/alex-honnold-p1/blob/main/README.md?plain=1) : Used for some ideas.
+
+<br>
+<br>
+
+## Media
+
+<br>
+
+* [Pixabay](https://pixabay.com/vectors/tic-tac-toe-game-tick-tack-toe-150614/): Used for picture on Home Page.
+* [Freepik](hhttps://www.freepik.com/free-vector/curiosity-people-concept-illustration_30576696.htm#query=think&position=7&from_view=search&track=sph): Used for picture on rules pop up.
+
+<br>
+
+**[Back to top](<#TIC-TAC-TOE>)**
+
+<br>
+<br>
+
+# Acknowledgements
+
+<hr>
+<br>
+
+This project was developed and designed as a Portfolio 2 Project for Full Stack Software Developer Diploma course at the [Code Institute](https://codeinstitute.net/). I would like to thank my mentor Marcel Mulders for his invaluable feedback and guidance, our facilitator Chris Quinn, the Slack community, and all at the Code Institute for their help and support. I really enjoyed working on this project.
+
+<br>
+<br>
+
+**[Back to top](<#TIC-TAC-TOE>)**
