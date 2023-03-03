@@ -419,12 +419,12 @@
 
 <br>
 
-![levels](https://res.cloudinary.com/doyc0uqcs/image/upload/v1677690949/Project%202%20Tic%20Tac%20Toe/levels_gupiik.png)
+![levels](https://res.cloudinary.com/doyc0uqcs/image/upload/v1677880248/Project%202%20Tic%20Tac%20Toe/bkpopup_nija5b.png)
 
 <br>
 <br>
 
-![chooselevel](https://res.cloudinary.com/doyc0uqcs/image/upload/v1677691384/Project%202%20Tic%20Tac%20Toe/chooselevel_gxngwp.png)
+![chooselevel](https://res.cloudinary.com/doyc0uqcs/image/upload/v1677880254/Project%202%20Tic%20Tac%20Toe/bkpopup2_d24gol.png)
 
 <br>
 

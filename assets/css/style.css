@@ -243,6 +243,7 @@ img {
 #error {
     display: none;
     color: #fffc00;
+    font-size: small;
 }
 
 #congratulations {
