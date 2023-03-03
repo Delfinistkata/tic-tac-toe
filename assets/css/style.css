@@ -193,7 +193,7 @@ img {
 .flex-container {
     display: block;
     width: 250px;
-    top: 15px;
+    top: 1px;
     left: 0;
     right: 0;
     margin: auto;
@@ -203,6 +203,7 @@ img {
     font-size: 10px;
     background-color: #000000cc;
     color: ghostwhite;
+    z-index: 9;
 }
 
 .flex-item-left {
@@ -227,8 +228,8 @@ img {
 }
 
 .choose-player {
-    background: red;
-    color: whitesmoke;
+    background: #1d0f0f;
+    color: white;
     text-align: initial;
     padding: 5%;
     font-weight: bold;
@@ -241,7 +242,7 @@ img {
 
 #error {
     display: none;
-    color: black;
+    color: #fffc00;
 }
 
 #congratulations {
@@ -269,14 +270,14 @@ img {
     padding-bottom: 10px;
 }
 
-#player1 {
+#gamer1 {
     display: inline-block;
     color: black;
     font-size: x-large;
     font-weight: bold;
 }
 
-#player2 {
+#gamer2 {
     display: inline-block;
     color: black;
     font-size: x-large;
@@ -392,6 +393,14 @@ footer {
         justify-content: center;
         align-items: center;
     }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+        padding-top: 11%;
+    }
 }
 
 /* Small devices (mobile phones 550px and up) */
@@ -429,7 +438,17 @@ footer {
         width: 36%;
         top: 25%;
     }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        padding-top: 11%;
+    }
 }
+
+
 
 /* Medium devices (tablets 870px and up) */
 @media only screen and (min-width: 870px) {

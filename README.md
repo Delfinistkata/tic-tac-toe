@@ -718,7 +718,7 @@ The HTML validator results for each page are below:
 
 * Game Page
 
-![htmlvalidator2]()
+![htmlvalidator2](https://res.cloudinary.com/doyc0uqcs/image/upload/v1677772467/Project%202%20Tic%20Tac%20Toe/htmlvalidator_yocboh.png)
 
 <br>
 <br>
@@ -882,7 +882,7 @@ Rules' Close Button | Changes colour when clicked and closes popup when clicked.
 
 <br>
 
-![Game Page]()
+![Game Page](https://res.cloudinary.com/doyc0uqcs/image/upload/v1677870758/Project%202%20Tic%20Tac%20Toe/lhgamepage_ewdayr.png)
 
 <br>
 <br>
@@ -965,7 +965,7 @@ The live link can be found [here]()
 
 <br>
 
-* [Google Fonts]("https://fonts.google.com/") : Used for font.
+* [Google Fonts](https://fonts.google.com/) : Used for font.
 * [W3School](https://www.w3schools.com/css/css3_flexbox_container.asp) : Used for flexbox.
 * [Gamescrafters](http://gamescrafters.berkeley.edu/games.php?game=tictactoe) : Used for instructions.
 * [Gamesver](https://www.gamesver.com/all-about-tic-tac-toe-purpose-rules-how-to-play-strategy/) : Used for rules.
