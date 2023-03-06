@@ -47,11 +47,11 @@
    *  #### Announcing the Winner
    *  #### Reset Button
    *  #### Home Button
+   *  #### 404 Error Page
 
    2. ### [Features left to Implement](<#features-left-to-implement-1>)
    * #### Single player mode (ie. playing against the computer)
    * #### Choose Grid: 4x4 and 5x5
-   * #### 404 error page
    * #### Additional Pages:
       * ##### Page displaying the highest result.
 
@@ -542,6 +542,16 @@
 
 <br>
 
+* 404 Error Page:
+
+   - The user will be able to get back to the home page if they enter the wrong URL.
+
+<br>
+
+![404page](https://res.cloudinary.com/doyc0uqcs/image/upload/v1678130410/Project%202%20Tic%20Tac%20Toe/404errorpage_dpcxa2.png)
+
+<br>
+
 **[Back to top](<#TIC-TAC-TOE>)**
 
 <br>
@@ -551,8 +561,6 @@
 * Single player mode (ie. playing against the computer).
 
 * Choose Grid: 4x4 and 5x5.
-
-* 404 error page
 
 * Additional Pages:
 
@@ -723,6 +731,13 @@ The HTML validator results for each page are below:
 <br>
 <br>
 
+* 404 Page
+
+![404validator3](https://res.cloudinary.com/doyc0uqcs/image/upload/v1677772467/Project%202%20Tic%20Tac%20Toe/htmlvalidator_yocboh.png)
+
+<br>
+<br>
+
 The CSS validator results are below:
 
 ![cssvalidator2](https://res.cloudinary.com/doyc0uqcs/image/upload/v1677773811/Project%202%20Tic%20Tac%20Toe/cssvalidator_dt7s1s.png)
@@ -887,6 +902,15 @@ Rules' Close Button | Changes colour when clicked and closes popup when clicked.
 <br>
 <br>
 
+#### 404 Page
+
+<br>
+
+![404 Page](https://res.cloudinary.com/doyc0uqcs/image/upload/v1678130329/Project%202%20Tic%20Tac%20Toe/404lighthouse_jpdodi.png)
+
+<br>
+<br>
+
 **[Back to top](<#TIC-TAC-TOE>)**
 
 <br>
@@ -976,6 +1000,7 @@ The live link can be found [here]()
 * [Coudinary](https://cloudinary.com/) : Used to store the screenshots in the Readme file.
 * [Readme.md](https://github.com/josswe26/rpsls/blob/main/README.md?plain=1) : Used for some ideas.
 * [Readme.md](https://github.com/kpetrauskas92/alex-honnold-p1/blob/main/README.md?plain=1) : Used for some ideas.
+* [Compressjpeg](https://compressjpeg.com/) : Used to compress 404 error picture.
 
 <br>
 <br>
@@ -986,6 +1011,7 @@ The live link can be found [here]()
 
 * [Pixabay](https://pixabay.com/vectors/tic-tac-toe-game-tick-tack-toe-150614/): Used for picture on Home Page.
 * [Freepik](hhttps://www.freepik.com/free-vector/curiosity-people-concept-illustration_30576696.htm#query=think&position=7&from_view=search&track=sph): Used for picture on rules pop up.
+* [Favicon](https://www.favicon.cc/?action=icon&file_id=989480): Used for URL icon 
 
 <br>
 
