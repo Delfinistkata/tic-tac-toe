@@ -32,6 +32,7 @@ var board = [
 if (window.location.pathname.slice(-9) === "game.html") {
     btnFinishGame.addEventListener("click", function () {
         document.getElementById("congratulations").style.display = "none";
+        closePopupGame();
         newGame();
     });
 }

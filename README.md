@@ -648,6 +648,11 @@
 
 <br>
 
+* [Favicon.cc](https://www.favicon.cc/) 
+    - Favicon.cc was used to create the site favicon icon.
+
+<br>
+
 **[Back to top](<#TIC-TAC-TOE>)**
 
 <br>
@@ -860,6 +865,16 @@ Reset Button | It resets the board after each round before reaching the stated l
 Home Button | Changes colour when clicked and opens Home Page. | Pass
 Rules Button |Changes colour when clicked and opens rules popup when clicked. | Pass
 Rules' Close Button | Changes colour when clicked and closes popup when clicked. | Pass
+
+<br>
+<br>
+
+- 404 Error Page
+
+Feature | Outcome | Pass/Fail
+--- | --- | ---
+404 Error Page | Entering an incorrect URL into the tab brings the player to the 404 error page. | Pass
+Back Button | Link to home page when button is clicked work as expected. | Pass
 
 <br>
 
