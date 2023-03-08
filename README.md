@@ -12,6 +12,10 @@
     The grid was known as the Magic Square because the numbers 1-9 could be arranged so that their sum is the same horizontally, diagonally or vertically. 
 
 <br>
+
+![responsive-pic](https://res.cloudinary.com/doyc0uqcs/image/upload/v1678281961/Project%202%20Tic%20Tac%20Toe/tic-tac-toe_tnnt5p.png)
+
+<br>
 <br>
 
 # Table of Contents
@@ -123,7 +127,7 @@
 
  ## Wireframes
  
-  The wireframes for the website were produced in Balsamiq. There are frames for a full width display and mobile devices. The final site varies from the wireframes due to developments that occured during the creation process.
+  The wireframes for the website were produced in Balsamiq. There are frames for a full width display and mobile devices. The final site varies from the wireframes due to developments that appeared during the creation process.
 
 <br>
 
@@ -226,7 +230,7 @@
  ## Typography
  <p> The font chosen was 'Tanjawan' for the heading and for the body text. They fall back to sans-serif respectively. </p>
 
-  * 'Tanjawan' was chosen for the headings to give the user an inital welcoming feel and for the body text as it goes along nicely with the heading whilst being easy to read for all.
+  * 'Tanjawan' was chosen for the headings to give the user an initial welcoming feel and for the body text as it goes along nicely with the heading whilst being easy to read for all.
 
 <br>
 
@@ -247,7 +251,7 @@
 
 <br>
 
-<p> This game is primarily for everyone who likes to be challenged. The game offers information about the rules of the game and how to play it. Additionally, the game includes a score board, where each player will see their score after winning a game.Overall, the game is for anyone who is interested in challenging their brain on how to win againts the other player.
+<p> This game is primarily for everyone who likes to be challenged. The game offers information about the rules of the game and how to play it. Additionally, the game includes a score board, where each player will see their score after winning a game.Overall, the game is for anyone who is interested in challenging their brain on how to win against the other player.
 </p>
 
 <br>
@@ -395,7 +399,7 @@
 
 * Player's Board:
 
-   - The user will have the opportunity to see what they have choosen to play with in the game. 
+   - The user will have the opportunity to see what they have chosen to play with in the game. 
 
 <br>
 
@@ -413,7 +417,7 @@
 
    - The user will have 3 options: easy, medium and hard.
 
-   - Te user will have to choose if they wantt to play with 'X' or 'O'.
+   - Te user will have to choose if they want to play with 'X' or 'O'.
 
    - The user won't be able to start the game before choosing the level of difficulty.
 
@@ -845,7 +849,7 @@ Feedback Button | Changes colour when clicked and open feedback form popup when 
 Feature | Outcome | Pass/Fail
 --- | --- | ---
 Feedback Form | Require all fields in the right format before submitting. |  Pass
-Submit Button | Changes colour when clicked, submit form when cicked. |  Pass
+Submit Button | Changes colour when clicked, submit form when clicked. |  Pass
 Form Close Button | Changes colour when clicked and close pop-up when clicked. | Pass
 
 <br>

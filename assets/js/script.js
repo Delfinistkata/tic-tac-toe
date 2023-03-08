@@ -145,7 +145,7 @@ function startGame() {
     firstgame = false;
 }
 
-/***
+/**
  * Reset the board after winning each game before reaching the selected level of difficulty
  */
 function resetBoard() {
