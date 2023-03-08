@@ -955,7 +955,7 @@ Back Button | Link to home page when button is clicked work as expected. | Pass
 
 <br>
 
-The live link can be found [here]()
+The live link can be found [here](https://delfinistkata.github.io/tic-tac-toe/)
 
 <br>
 
